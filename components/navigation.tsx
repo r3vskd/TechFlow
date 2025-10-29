@@ -38,21 +38,21 @@ export function Navigation() {
               href="#productos"
               className="text-foreground/80 hover:text-primary transition-colors duration-300 relative group"
             >
-              Productos
+              Products
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 rounded-full" />
             </a>
             <a
               href="#categorias"
               className="text-foreground/80 hover:text-primary transition-colors duration-300 relative group"
             >
-              Categorías
+              Categories
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 rounded-full" />
             </a>
             <a
               href="#ofertas"
               className="text-foreground/80 hover:text-primary transition-colors duration-300 relative group"
             >
-              Ofertas
+              Offers
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 rounded-full" />
             </a>
           </div>
