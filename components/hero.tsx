@@ -32,7 +32,7 @@ export function Hero() {
 
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed text-balance">
-            Descubre gadgets electrónicos innovadores que transforman tu vida diaria. Calidad premium, diseño
+            Descubre gadgets innovadores que transforman tu vida diaria. Calidad premium, diseño
             excepcional y tecnología de vanguardia.
           </p>
 
