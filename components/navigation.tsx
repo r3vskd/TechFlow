@@ -32,7 +32,7 @@ export function Navigation() {
             </span>
           </div>
 
-          {/* Desktop Menu */}
+          {/* Desktop Menu **/}
           <div className="hidden md:flex items-center gap-8">
             <a
               href="#productos"
