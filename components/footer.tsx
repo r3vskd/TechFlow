@@ -14,7 +14,7 @@ export function Footer() {
               </span>
             </div>
             <p className="text-muted-foreground leading-relaxed mb-6 max-w-sm">
-              Tu destino para los gadgets electrónicos más innovadores. Calidad premium y tecnología de vanguardia al
+              Los gadgets electrónicos más innovadores. Calidad premium y tecnología de vanguardia al
               alcance de tu mano.
             </p>
             <div className="flex items-center gap-3">
