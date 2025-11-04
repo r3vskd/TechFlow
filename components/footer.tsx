@@ -3,6 +3,8 @@ import { Zap, Facebook, Twitter, Instagram, Youtube } from "lucide-react"
 export function Footer() {
   return (
     <footer className="relative border-t border-border">
+      {/* Gradient top accent */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-primary via-accent to-cta" />
       <div className="container mx-auto px-4 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
           {/* Brand */}
@@ -15,14 +17,14 @@ export function Footer() {
             </div>
             <p className="text-muted-foreground leading-relaxed mb-6 max-w-sm">
               Los gadgets electrónicos más innovadores. Calidad premium y tecnología de vanguardia al
-              alcance de tu mano.
+              alcance de tu mano. Disfruta envíos gratis desde $50 y soporte 24/7.
             </p>
             <div className="flex items-center gap-3">
               {[Facebook, Twitter, Instagram, Youtube].map((Icon, index) => (
                 <a
                   key={index}
                   href="#"
-                  className="w-10 h-10 rounded-full bg-secondary hover:bg-primary/20 border border-border hover:border-primary/50 flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+                  className="w-11 h-11 rounded-full bg-secondary hover:bg-primary/20 border border-border hover:border-primary/50 flex items-center justify-center transition-all duration-300 hover:scale-110 group"
                 >
                   <Icon className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
                 </a>
