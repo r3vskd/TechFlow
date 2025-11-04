@@ -80,7 +80,7 @@ export function FeaturedProducts() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {products.map((product) => (
             <div key={product.id} className="group relative cursor-pointer">
-              <div className="relative rounded-3xl bg-card backdrop-blur-xl border border-border hover:border-primary/50 transition-all duration-500 overflow-hidden hover:scale-[1.02]">
+              <div className="relative rounded-3xl bg-card backdrop-blur-xl border border-border hover:border-primary/50 transition-all duration-500 overflow-hidden hover:scale-[1.02] group-hover:-translate-y-1 shadow-sm hover:shadow-lg hover:shadow-primary/10">
                 {/* Glow effect */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-accent/0 to-cta/0 group-hover:from-primary/5 group-hover:via-accent/5 group-hover:to-cta/5 transition-all duration-500" />
 
@@ -115,7 +115,7 @@ export function FeaturedProducts() {
                   <div className="absolute inset-0 bg-background/95 backdrop-blur-xl opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
                     <Button
                       size="lg"
-                      className="rounded-full bg-cta hover:bg-cta-hover text-white font-semibold gap-2 hover:scale-105 transition-all duration-300"
+                      className="rounded-full bg-gradient-to-r from-cta to-primary hover:from-cta-hover hover:to-primary text-white font-semibold gap-2 hover:scale-105 transition-all duration-300 ring-1 ring-cta/30"
                     >
                       <ShoppingCart className="w-5 h-5" />
                       Añadir al Carrito
@@ -141,8 +141,14 @@ export function FeaturedProducts() {
 
                   {/* Price */}
                   <div className="flex items-center gap-3">
-                    <span className="text-2xl font-bold text-primary">${product.price}</span>
+                    <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">${product.price}</span>
                     <span className="text-sm text-muted-foreground line-through">${product.originalPrice}</span>
+                  </div>
+
+                  {/* Extra info */}
+                  <div className="mt-4 text-xs text-muted-foreground flex items-center gap-3">
+                    <span className="px-2 py-1 rounded-full bg-secondary/50 border border-border">Envío 24-48h</span>
+                    <span className="px-2 py-1 rounded-full bg-secondary/50 border border-border">Stock disponible</span>
                   </div>
                 </div>
               </div>
