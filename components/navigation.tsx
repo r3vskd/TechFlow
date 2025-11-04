@@ -16,7 +16,9 @@ export function Navigation() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled ? "bg-background/80 backdrop-blur-2xl border-b border-border" : "bg-transparent"
+        isScrolled
+          ? "bg-background/70 backdrop-blur-2xl border-b border-border shadow-lg shadow-primary/10"
+          : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4 lg:px-8">
@@ -32,27 +34,27 @@ export function Navigation() {
             </span>
           </div>
 
-          {/* Desktop Menu **/}
+          {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
             <a
               href="#productos"
               className="text-foreground/80 hover:text-primary transition-colors duration-300 relative group"
             >
-              Products
+              Productos
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 rounded-full" />
             </a>
             <a
               href="#categorias"
               className="text-foreground/80 hover:text-primary transition-colors duration-300 relative group"
             >
-              Categories
+              Categorías
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 rounded-full" />
             </a>
             <a
               href="#ofertas"
               className="text-foreground/80 hover:text-primary transition-colors duration-300 relative group"
             >
-              Offers
+              Ofertas
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 rounded-full" />
             </a>
           </div>
