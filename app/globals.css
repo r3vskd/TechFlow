@@ -184,4 +184,45 @@
   .text-glow {
     text-shadow: 0 0 20px currentColor;
   }
+
+  /* Soft shadow and strong ring helpers */
+  .shadow-soft {
+    box-shadow: 0 10px 30px -10px oklch(0.65 0.25 250 / 0.25);
+  }
+
+  .ring-strong {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+
+  /* Aurora animated background utility */
+  .aurora-bg {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .aurora-bg::before {
+    content: "";
+    position: absolute;
+    inset: -20% -30% auto -30%;
+    height: 140%;
+    background: radial-gradient(800px 400px at 20% 30%, oklch(0.7 0.2 200 / 0.15), transparent 60%),
+      radial-gradient(600px 300px at 80% 20%, oklch(0.65 0.28 330 / 0.15), transparent 60%),
+      radial-gradient(700px 350px at 50% 80%, oklch(0.68 0.25 280 / 0.12), transparent 60%);
+    filter: blur(30px);
+    animation: aurora-move 20s ease-in-out infinite alternate;
+    pointer-events: none;
+  }
+
+  @keyframes aurora-move {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+    50% {
+      transform: translate3d(10%, -5%, 0) rotate(5deg);
+    }
+    100% {
+      transform: translate3d(-8%, 6%, 0) rotate(-4deg);
+    }
+  }
 }
