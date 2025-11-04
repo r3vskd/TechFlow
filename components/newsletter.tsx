@@ -12,7 +12,7 @@ export function Newsletter() {
           {/* Background glow */}
           <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-accent/20 to-cta/20 blur-[100px] rounded-full" />
 
-          <div className="relative p-12 md:p-16 rounded-[2.5rem] bg-card backdrop-blur-2xl border border-border overflow-hidden">
+          <div className="relative p-12 md:p-16 rounded-[2.5rem] bg-card backdrop-blur-2xl border border-border overflow-hidden shadow-lg shadow-primary/10">
             {/* Decorative elements */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent/10 rounded-full blur-3xl" />
@@ -36,14 +36,15 @@ export function Newsletter() {
                 />
                 <Button
                   size="lg"
-                  className="rounded-full bg-cta hover:bg-cta-hover text-white font-semibold px-8 gap-2 h-14 hover:scale-105 transition-all duration-300 hover:shadow-[0_0_40px_-5px] hover:shadow-cta"
+                  className="rounded-full bg-gradient-to-r from-cta to-primary hover:from-cta-hover hover:to-primary text-white font-semibold px-8 gap-2 h-14 hover:scale-105 transition-all duration-300 hover:shadow-[0_0_40px_-5px] hover:shadow-cta ring-1 ring-cta/30"
                 >
-                  Suscribirse
+                  Recibir novedades
                   <Send className="w-5 h-5" />
                 </Button>
               </div>
 
               <p className="text-xs text-muted-foreground mt-4">No spam. Cancela cuando quieras. 🔒</p>
+              <div className="mt-2 text-[10px] text-muted-foreground">Protegemos tus datos según nuestra política de privacidad.</div>
             </div>
           </div>
         </div>
