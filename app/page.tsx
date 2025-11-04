@@ -8,13 +8,21 @@ import { Navigation } from "@/components/navigation"
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen pt-24">
       <Navigation />
-      <Hero />
+      <div id="inicio">
+        <Hero />
+      </div>
       <Categories />
-      <FeaturedProducts />
-      <Benefits />
-      <Newsletter />
+      <div id="productos">
+        <FeaturedProducts />
+      </div>
+      <div id="beneficios">
+        <Benefits />
+      </div>
+      <div id="newsletter">
+        <Newsletter />
+      </div>
       <Footer />
     </div>
   )
