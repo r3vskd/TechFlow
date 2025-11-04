@@ -60,7 +60,7 @@ export function Categories() {
             const Icon = category.icon
             return (
               <div key={index} className="group relative cursor-pointer">
-                <div className="relative p-6 rounded-3xl bg-card backdrop-blur-xl border border-border hover:border-primary/50 transition-all duration-500 hover:scale-105 overflow-hidden">
+                <div className="relative p-6 rounded-3xl bg-card backdrop-blur-xl border border-border hover:border-primary/50 transition-all duration-500 hover:scale-105 hover:-rotate-1 overflow-hidden">
                   {/* Glow effect on hover */}
                   <div
                     className="absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-3xl"
@@ -71,7 +71,7 @@ export function Categories() {
 
                   <div className="relative z-10 flex flex-col items-center text-center gap-3">
                     <div
-                      className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${category.color} p-0.5 group-hover:scale-110 transition-transform duration-300`}
+                      className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${category.color} p-0.5 group-hover:scale-110 transition-transform duration-300 glow-effect-strong`}
                     >
                       <div className="w-full h-full rounded-2xl bg-background flex items-center justify-center">
                         <Icon className="w-7 h-7 text-primary group-hover:text-accent transition-colors duration-300" />
@@ -81,7 +81,11 @@ export function Categories() {
                       <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300">
                         {category.name}
                       </h3>
-                      <p className="text-xs text-muted-foreground mt-1">{category.count}</p>
+                      {/* Count pill */}
+                      <p className="inline-flex items-center gap-1 mt-2 text-[11px] px-2 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">
+                        <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                        {category.count}
+                      </p>
                     </div>
                   </div>
                 </div>
