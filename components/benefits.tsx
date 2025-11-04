@@ -31,7 +31,7 @@ const benefits = [
 
 export function Benefits() {
   return (
-    <section className="py-24 relative">
+    <section id="beneficios" className="py-24 relative">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {benefits.map((benefit, index) => {
@@ -46,7 +46,7 @@ export function Benefits() {
 
                   <div className="relative z-10">
                     <div
-                      className={`w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}
+                      className={`w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 glow-effect`}
                     >
                       <Icon className={`w-7 h-7 ${benefit.color}`} />
                     </div>
@@ -54,6 +54,9 @@ export function Benefits() {
                       {benefit.title}
                     </h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">{benefit.description}</p>
+                    {/* Corner accents */}
+                    <div className="pointer-events-none absolute top-3 left-3 w-16 h-16 rounded-tl-2xl border-t border-l border-primary/20" />
+                    <div className="pointer-events-none absolute bottom-3 right-3 w-16 h-16 rounded-br-2xl border-b border-r border-accent/20" />
                   </div>
                 </div>
               </div>
