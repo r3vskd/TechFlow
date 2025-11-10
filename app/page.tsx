@@ -13,8 +13,12 @@ export default function Home() {
       <div id="inicio">
         <Hero />
       </div>
-      <Categories />
-      <div id="productos">
+      <div id="categorias" className="scroll-mt-36">
+        <Categories />
+      </div>
+      {/* Anchor para ofertas, posicionado antes de productos para navegación */}
+      <div id="ofertas" className="scroll-mt-36" aria-hidden="true" />
+      <div id="productos" className="scroll-mt-36">
         <FeaturedProducts />
       </div>
       <div id="beneficios">
