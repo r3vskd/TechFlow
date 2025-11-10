@@ -20,13 +20,20 @@ export function Footer() {
               alcance de tu mano. Disfruta envíos gratis desde $50 y soporte 24/7.
             </p>
             <div className="flex items-center gap-3">
-              {[Facebook, Twitter, Instagram, Youtube].map((Icon, index) => (
+              {[
+                { name: "Facebook", Icon: Facebook, href: "#" },
+                { name: "Twitter", Icon: Twitter, href: "#" },
+                { name: "Instagram", Icon: Instagram, href: "#" },
+                { name: "YouTube", Icon: Youtube, href: "#" },
+              ].map(({ name, Icon, href }) => (
                 <a
-                  key={index}
-                  href="#"
-                  className="w-11 h-11 rounded-full bg-secondary hover:bg-primary/20 border border-border hover:border-primary/50 flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+                  key={name}
+                  href={href}
+                  aria-label={`Visitar ${name}`}
+                  className="w-11 h-11 rounded-full bg-secondary hover:bg-primary/20 border border-border hover:border-primary/50 flex items-center justify-center transition-all duration-300 hover:scale-110 group ring-1 ring-border hover:ring-primary/40 glow-effect"
                 >
                   <Icon className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
+                  <span className="sr-only">{name}</span>
                 </a>
               ))}
             </div>
