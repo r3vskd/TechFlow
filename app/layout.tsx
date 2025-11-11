@@ -6,7 +6,7 @@ import './globals.css'
 import { AnnouncementBar } from '@/components/announcement-bar'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
+  title: 'TechFlow',
   description: 'Created with v0',
   generator: 'v0.app',
   applicationName: 'TechFlow',
@@ -26,6 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   )
 }
+
 
 
 
