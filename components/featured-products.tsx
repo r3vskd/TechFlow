@@ -164,11 +164,12 @@ export function FeaturedProducts() {
         {/* View all button */}
         <div className="text-center mt-12">
           <Button
+            asChild
             size="lg"
             variant="outline"
             className="rounded-full border-2 border-primary/30 hover:border-primary bg-transparent hover:bg-primary/10 backdrop-blur-xl px-8 py-6 text-lg font-semibold transition-all duration-300 hover:scale-105"
           >
-            Ver Todos los Productos
+            <a href="#productos" aria-label="Ver todos los productos">Ver Todos los Productos</a>
           </Button>
         </div>
       </div>
