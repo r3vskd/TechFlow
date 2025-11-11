@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   generator: 'v0.app',
   applicationName: 'TechFlow',
   themeColor: '#000000',
+  robots: { index: true, follow: true },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -24,5 +25,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   )
 }
+
 
 
