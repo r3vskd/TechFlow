@@ -37,6 +37,13 @@ export function Navigation() {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
             <a
+              href="#inicio"
+              className="text-foreground/80 hover:text-primary transition-colors duration-300 relative group"
+            >
+              Inicio
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 rounded-full" />
+            </a>
+            <a
               href="#productos"
               className="text-foreground/80 hover:text-primary transition-colors duration-300 relative group"
             >
