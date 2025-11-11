@@ -5,6 +5,23 @@ import { Input } from "@/components/ui/input"
 import { Send } from "lucide-react"
 
 export function Newsletter() {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    const form = e.currentTarget
+    const emailInput = form.querySelector('input[type="email"]') as HTMLInputElement | null
+    const statusEl = form.querySelector('#newsletter-status') as HTMLDivElement | null
+    if (!emailInput || !statusEl) return
+    const email = emailInput.value.trim()
+    const isValid = /.+@.+\..+/.test(email)
+    if (!isValid) {
+      emailInput.setAttribute('aria-invalid', 'true')
+      statusEl.textContent = 'Por favor, ingresa un correo válido.'
+      return
+    }
+    emailInput.removeAttribute('aria-invalid')
+    statusEl.textContent = '¡Gracias por suscribirte! Te enviaremos novedades pronto.'
+    form.reset()
+  }
   return (
     <section className="py-24 relative" aria-labelledby="newsletter-heading">
       <div className="container mx-auto px-4 lg:px-8">
@@ -28,7 +45,7 @@ export function Newsletter() {
                 Recibe ofertas exclusivas, lanzamientos anticipados y las últimas novedades en tecnología
               </p>
 
-              <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" aria-label="Formulario de suscripción">
+              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" aria-label="Formulario de suscripción">
                 <Input
                   type="email"
                   aria-label="Correo electrónico"
@@ -47,6 +64,7 @@ export function Newsletter() {
               </form>
 
               <p className="text-xs text-muted-foreground mt-4">No spam. Cancela cuando quieras. 🔒</p>
+              <div id="newsletter-status" aria-live="polite" className="mt-2 text-sm text-primary"></div>
               <div className="mt-2 text-[10px] text-muted-foreground">Protegemos tus datos según nuestra política de privacidad.</div>
             </div>
           </div>
