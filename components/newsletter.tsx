@@ -6,7 +6,7 @@ import { Send } from "lucide-react"
 
 export function Newsletter() {
   return (
-    <section className="py-24 relative">
+    <section className="py-24 relative" aria-labelledby="newsletter-heading">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="relative max-w-4xl mx-auto">
           {/* Background glow */}
@@ -18,7 +18,7 @@ export function Newsletter() {
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent/10 rounded-full blur-3xl" />
 
             <div className="relative z-10 text-center">
-              <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance">
+              <h2 id="newsletter-heading" className="text-3xl md:text-5xl font-bold mb-4 text-balance">
                 Únete a Nuestra{" "}
                 <span className="bg-gradient-to-r from-primary via-accent to-cta bg-clip-text text-transparent">
                   Comunidad
@@ -28,20 +28,23 @@ export function Newsletter() {
                 Recibe ofertas exclusivas, lanzamientos anticipados y las últimas novedades en tecnología
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+              <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" aria-label="Formulario de suscripción">
                 <Input
                   type="email"
+                  aria-label="Correo electrónico"
+                  required
                   placeholder="tu@email.com"
                   className="rounded-full bg-background/50 backdrop-blur-xl border-border focus:border-primary h-14 px-6 text-base"
                 />
                 <Button
                   size="lg"
+                  type="submit"
                   className="rounded-full bg-gradient-to-r from-cta to-primary hover:from-cta-hover hover:to-primary text-white font-semibold px-8 gap-2 h-14 hover:scale-105 transition-all duration-300 hover:shadow-[0_0_40px_-5px] hover:shadow-cta ring-1 ring-cta/30"
                 >
                   Recibir novedades
                   <Send className="w-5 h-5" />
                 </Button>
-              </div>
+              </form>
 
               <p className="text-xs text-muted-foreground mt-4">No spam. Cancela cuando quieras. 🔒</p>
               <div className="mt-2 text-[10px] text-muted-foreground">Protegemos tus datos según nuestra política de privacidad.</div>
