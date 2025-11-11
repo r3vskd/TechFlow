@@ -48,22 +48,26 @@ export function Hero() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button
+              asChild
               size="lg"
               className="rounded-full bg-cta hover:bg-cta-hover text-white px-10 py-6 text-lg font-semibold group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_-5px] hover:shadow-cta ring-1 ring-cta/30"
             >
-              <span className="relative z-10 flex items-center gap-2">
-                Comprar ahora
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-              </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-cta to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <a href="#productos" aria-label="Ir a productos">
+                <span className="relative z-10 flex items-center gap-2">
+                  Comprar ahora
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-cta to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </a>
             </Button>
 
             <Button
+              asChild
               size="lg"
               variant="outline"
               className="rounded-full border-2 border-primary/30 hover:border-primary bg-transparent hover:bg-primary/10 backdrop-blur-xl px-8 py-6 text-lg font-semibold transition-all duration-300 hover:scale-105"
             >
-              Ver ofertas
+              <a href="#ofertas" aria-label="Ver ofertas">Ver ofertas</a>
             </Button>
           </div>
 
