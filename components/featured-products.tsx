@@ -104,6 +104,8 @@ export function FeaturedProducts() {
                   {/* Favorite button */}
                   <button
                     onClick={() => toggleFavorite(product.id)}
+                    aria-pressed={favorites.includes(product.id)}
+                    aria-label={favorites.includes(product.id) ? `Quitar ${product.name} de favoritos` : `Añadir ${product.name} a favoritos`}
                     className="absolute top-4 right-4 w-10 h-10 rounded-full bg-background/80 backdrop-blur-xl border border-border flex items-center justify-center hover:scale-110 transition-all duration-300 hover:bg-background"
                   >
                     <Heart
@@ -117,6 +119,7 @@ export function FeaturedProducts() {
                   <div className="absolute inset-0 bg-background/95 backdrop-blur-xl opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
                     <Button
                       size="lg"
+                      aria-label={`Añadir ${product.name} al carrito`}
                       className="rounded-full bg-gradient-to-r from-cta to-primary hover:from-cta-hover hover:to-primary text-white font-semibold gap-2 hover:scale-105 transition-all duration-300 ring-1 ring-cta/30"
                     >
                       <ShoppingCart className="w-5 h-5" />
