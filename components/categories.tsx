@@ -60,7 +60,11 @@ export function Categories() {
             const Icon = category.icon
             return (
               <div key={index} className="group relative cursor-pointer">
-                <div className="relative p-6 rounded-3xl bg-card backdrop-blur-xl border border-border hover:border-primary/50 transition-all duration-500 hover:scale-105 hover:-rotate-1 overflow-hidden">
+                <a
+                  href="#productos"
+                  aria-label={`Explorar categoría ${category.name}`}
+                  className="relative p-6 rounded-3xl bg-card backdrop-blur-xl border border-border hover:border-primary/50 transition-all duration-500 hover:scale-105 hover:-rotate-1 overflow-hidden block"
+                >
                   {/* Glow effect on hover */}
                   <div
                     className="absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-3xl"
@@ -88,7 +92,7 @@ export function Categories() {
                       </p>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             )
           })}
