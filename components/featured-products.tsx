@@ -138,14 +138,18 @@ export function FeaturedProducts() {
                   {/* Rating */}
                   <div className="flex items-center gap-2 mb-3">
                     <div className="flex items-center gap-1">
-                      <Star className="w-4 h-4 fill-accent text-accent" />
+                      <Star className="w-4 h-4 fill-accent text-accent" aria-hidden="true" />
                       <span className="text-sm font-semibold">{product.rating}</span>
                     </div>
                     <span className="text-xs text-muted-foreground">({product.reviews} reseñas)</span>
+                    <span className="sr-only">Valoración {product.rating} sobre 5 con {product.reviews} reseñas</span>
                   </div>
 
                   {/* Price */}
-                  <div className="flex items-center gap-3">
+                  <div
+                    className="flex items-center gap-3"
+                    aria-label={`Precio actual $${product.price}. Precio original $${product.originalPrice}.`}
+                  >
                     <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">${product.price}</span>
                     <span className="text-sm text-muted-foreground line-through">${product.originalPrice}</span>
                   </div>
