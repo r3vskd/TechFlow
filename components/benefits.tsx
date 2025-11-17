@@ -38,7 +38,10 @@ export function Benefits() {
             const Icon = benefit.icon
             return (
               <div key={index} className="group relative">
-                <div className="relative p-8 rounded-3xl bg-card backdrop-blur-xl border border-border hover:border-primary/50 transition-all duration-500 hover:scale-105 overflow-hidden">
+                <article
+                  className="relative p-8 rounded-3xl bg-card backdrop-blur-xl border border-border hover:border-primary/50 transition-all duration-500 hover:scale-105 overflow-hidden"
+                  aria-labelledby={`beneficio-${index}`}
+                >
                   {/* Glow effect */}
                   <div
                     className={`absolute inset-0 ${benefit.color} opacity-0 group-hover:opacity-5 blur-3xl transition-opacity duration-500`}
@@ -50,7 +53,7 @@ export function Benefits() {
                     >
                       <Icon className={`w-7 h-7 ${benefit.color}`} />
                     </div>
-                    <h3 className="font-bold text-xl mb-2 group-hover:text-primary transition-colors duration-300">
+                    <h3 id={`beneficio-${index}`} className="font-bold text-xl mb-2 group-hover:text-primary transition-colors duration-300">
                       {benefit.title}
                     </h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">{benefit.description}</p>
@@ -58,7 +61,7 @@ export function Benefits() {
                     <div className="pointer-events-none absolute top-3 left-3 w-16 h-16 rounded-tl-2xl border-t border-l border-primary/20" />
                     <div className="pointer-events-none absolute bottom-3 right-3 w-16 h-16 rounded-br-2xl border-b border-r border-accent/20" />
                   </div>
-                </div>
+                </article>
               </div>
             )
           })}
