@@ -2,7 +2,7 @@
 
 import { ShoppingCart, Search, Menu, Zap } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
