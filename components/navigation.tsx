@@ -7,11 +7,19 @@ import { useState } from "react"
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
 
+  // Use effect to attach scroll listener once and clean up
   if (typeof window !== "undefined") {
-    window.addEventListener("scroll", () => {
-      setIsScrolled(window.scrollY > 50)
-    })
+    // no-op: window exists, effect below will run
   }
+
+  // Avoid adding event listeners during render
+  // and ensure proper cleanup to prevent leaks
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  useEffect(() => {
+    const onScroll = () => setIsScrolled(window.scrollY > 50)
+    window.addEventListener("scroll", onScroll, { passive: true })
+    return () => window.removeEventListener("scroll", onScroll)
+  }, [])
 
   return (
     <nav
@@ -72,6 +80,8 @@ export function Navigation() {
               variant="ghost"
               size="icon"
               className="rounded-full hover:bg-primary/10 hover:text-primary transition-all duration-300 hover:scale-110"
+              aria-label="Buscar"
+              type="button"
             >
               <Search className="w-5 h-5" />
             </Button>
@@ -79,16 +89,25 @@ export function Navigation() {
               variant="ghost"
               size="icon"
               className="rounded-full hover:bg-primary/10 hover:text-primary transition-all duration-300 hover:scale-110 relative"
+              aria-label="Abrir carrito (3 artículos)"
+              type="button"
             >
               <ShoppingCart className="w-5 h-5" />
-              <span className="absolute -top-1 -right-1 w-5 h-5 bg-cta text-[10px] font-bold rounded-full flex items-center justify-center text-white">
+              <span
+                className="absolute -top-1 -right-1 w-5 h-5 bg-cta text-[10px] font-bold rounded-full flex items-center justify-center text-white"
+                aria-live="polite"
+              >
                 3
+                <span className="sr-only">artículos en el carrito</span>
               </span>
             </Button>
             <Button
               variant="ghost"
               size="icon"
               className="md:hidden rounded-full hover:bg-primary/10 hover:text-primary transition-all duration-300"
+              aria-label="Abrir menú"
+              aria-expanded="false"
+              type="button"
             >
               <Menu className="w-5 h-5" />
             </Button>
