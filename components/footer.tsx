@@ -1,4 +1,4 @@
-import { Zap, Facebook, Twitter, Instagram, Youtube } from "lucide-react"
+import { Zap, Facebook, Twitter, Instagram, Youtube, ArrowUp } from "lucide-react"
 
 export function Footer() {
   return (
@@ -92,6 +92,14 @@ export function Footer() {
             </a>
             <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
               Cookies
+            </a>
+            <a
+              href="#inicio"
+              aria-label="Volver al inicio"
+              className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors duration-300"
+            >
+              <ArrowUp className="w-4 h-4" aria-hidden="true" />
+              <span>Inicio</span>
             </a>
           </div>
         </div>
