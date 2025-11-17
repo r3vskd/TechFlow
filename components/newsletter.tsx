@@ -49,6 +49,9 @@ export function Newsletter() {
                 <Input
                   type="email"
                   aria-label="Correo electrónico"
+                  id="newsletter-email"
+                  name="email"
+                  aria-describedby="newsletter-status"
                   required
                   placeholder="tu@email.com"
                   className="rounded-full bg-background/50 backdrop-blur-xl border-border focus:border-primary h-14 px-6 text-base"
