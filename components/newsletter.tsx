@@ -16,10 +16,12 @@ export function Newsletter() {
     if (!isValid) {
       emailInput.setAttribute('aria-invalid', 'true')
       statusEl.textContent = 'Por favor, ingresa un correo válido.'
+      statusEl.setAttribute('role', 'alert')
       return
     }
     emailInput.removeAttribute('aria-invalid')
     statusEl.textContent = '¡Gracias por suscribirte! Te enviaremos novedades pronto.'
+    statusEl.removeAttribute('role')
     form.reset()
   }
   return (
@@ -59,7 +61,7 @@ export function Newsletter() {
                 <Button
                   size="lg"
                   type="submit"
-                  className="rounded-full bg-gradient-to-r from-cta to-primary hover:from-cta-hover hover:to-primary text-white font-semibold px-8 gap-2 h-14 hover:scale-105 transition-all duration-300 hover:shadow-[0_0_40px_-5px] hover:shadow-cta ring-1 ring-cta/30"
+                  className="rounded-full bg-gradient-to-r from-cta to-primary hover:from-cta-hover hover:to-primary text-white font-semibold px-8 gap-2 h-14 hover:scale-105 transition-all duration-300 hover:shadow-[0_0_40px_-5px] hover:shadow-cta ring-1 ring-cta/30 motion-reduce:hover:scale-100 motion-reduce:transition-none motion-reduce:hover:shadow-none"
                 >
                   Recibir novedades
                   <Send className="w-5 h-5" />
