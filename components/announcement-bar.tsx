@@ -41,6 +41,7 @@ export function AnnouncementBar() {
           role="region"
           aria-live="polite"
           aria-label="Anuncio de temporada"
+          id="announcement-bar"
         >
           <Megaphone className="w-4 h-4 opacity-90" />
           <p className="text-sm font-medium">
@@ -49,7 +50,7 @@ export function AnnouncementBar() {
           <a
             href="#productos"
             aria-label="Ver ofertas en productos destacados"
-            className="text-xs font-semibold underline underline-offset-4 hover:text-white/90"
+            className="text-xs font-semibold underline underline-offset-4 hover:text-white/90 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/40 rounded-full px-2"
           >
             Ver ofertas
           </a>
@@ -57,7 +58,8 @@ export function AnnouncementBar() {
             aria-label="Cerrar anuncio"
             onClick={handleClose}
             type="button"
-            className="ml-auto mr-2 grid place-items-center rounded-full bg-white/15 hover:bg-white/25 transition-colors w-7 h-7"
+            className="ml-auto mr-2 grid place-items-center rounded-full bg-white/15 hover:bg-white/25 transition-colors w-7 h-7 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/40"
+            aria-controls="announcement-bar"
           >
             <X className="w-4 h-4" />
           </button>
