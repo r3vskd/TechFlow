@@ -176,6 +176,44 @@
 }
 
 @layer utilities {
+  /* Skip to content link: hidden by default, visible and styled on focus */
+  .skip-to-content {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .skip-to-content:focus {
+    position: fixed;
+    left: 50%;
+    top: 8px;
+    transform: translateX(-50%);
+    z-index: 100;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    padding: 0.5rem 0.75rem;
+    border-radius: 9999px;
+    background: var(--primary);
+    color: var(--primary-foreground);
+    box-shadow: 0 10px 30px -10px oklch(0.65 0.25 250 / 0.25);
+    outline: 3px solid oklch(0.65 0.25 250 / 0.4);
+    outline-offset: 2px;
+  }
+
+  /* Global reduced motion adjustments */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    .aurora-bg::before {
+      animation: none;
+    }
+  }
   .glow-effect {
     box-shadow: 0 0 20px -5px currentColor;
   }
