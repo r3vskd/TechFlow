@@ -115,8 +115,8 @@ export function FeaturedProducts() {
                     />
                   </button>
 
-                  {/* Quick add overlay */}
-                  <div className="absolute inset-0 bg-background/95 backdrop-blur-xl opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center motion-reduce:transition-none">
+                  {/* Quick add overlay - also show on focus for keyboard users */}
+                  <div className="absolute inset-0 bg-background/95 backdrop-blur-xl opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-all duration-300 flex items-center justify-center motion-reduce:transition-none">
                     <Button
                       size="lg"
                       aria-label={`Añadir ${product.name} al carrito`}
@@ -171,7 +171,7 @@ export function FeaturedProducts() {
             asChild
             size="lg"
             variant="outline"
-            className="rounded-full border-2 border-primary/30 hover:border-primary bg-transparent hover:bg-primary/10 backdrop-blur-xl px-8 py-6 text-lg font-semibold transition-all duration-300 hover:scale-105"
+            className="rounded-full border-2 border-primary/30 hover:border-primary bg-transparent hover:bg-primary/10 backdrop-blur-xl px-8 py-6 text-lg font-semibold transition-all duration-300 hover:scale-105 motion-reduce:hover:scale-100 motion-reduce:transition-none"
           >
             <a href="#productos" aria-label="Ver todos los productos">Ver Todos los Productos</a>
           </Button>
