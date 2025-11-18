@@ -11,6 +11,20 @@ export const metadata: Metadata = {
   generator: 'v0.app',
   applicationName: 'TechFlow',
   robots: { index: true, follow: true },
+  openGraph: {
+    type: 'website',
+    locale: 'es_ES',
+    siteName: 'TechFlow',
+    title: 'TechFlow',
+    description:
+      'Gadgets innovadores que transforman tu día a día. Envíos gratis desde $50, garantía extendida y ofertas semanales.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'TechFlow',
+    description:
+      'Gadgets innovadores que transforman tu día a día. Envíos gratis desde $50, garantía extendida y ofertas semanales.',
+  },
 }
 
 // Next 15: move viewport and themeColor to the dedicated export
