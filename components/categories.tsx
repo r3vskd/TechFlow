@@ -63,11 +63,11 @@ export function Categories() {
                 <a
                   href="#productos"
                   aria-label={`Explorar categoría ${category.name}`}
-                  className="relative p-6 rounded-3xl bg-card backdrop-blur-xl border border-border hover:border-primary/50 transition-all duration-500 hover:scale-105 hover:-rotate-1 overflow-hidden block focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 motion-reduce:hover:scale-100 motion-reduce:hover:rotate-0 motion-reduce:transition-none"
+                  className="relative p-6 rounded-3xl bg-card backdrop-blur-xl border border-border hover:border-primary/50 transition-all duration-500 hover:scale-105 hover:-rotate-1 overflow-hidden block focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 focus-visible:ring-offset-2 focus-visible:ring-offset-background motion-reduce:hover:scale-100 motion-reduce:hover:rotate-0 motion-reduce:transition-none"
                 >
                   {/* Glow effect on hover */}
                   <div
-                    className="absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-3xl"
+                    className="absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-10 group-focus-within:opacity-10 transition-opacity duration-500 rounded-3xl motion-reduce:transition-none"
                     style={{
                       backgroundImage: `linear-gradient(to bottom right, var(--color-primary), var(--color-accent))`,
                     }}
@@ -75,14 +75,14 @@ export function Categories() {
 
                   <div className="relative z-10 flex flex-col items-center text-center gap-3">
                     <div
-                      className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${category.color} p-0.5 group-hover:scale-110 transition-transform duration-300 glow-effect-strong`}
+                      className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${category.color} p-0.5 group-hover:scale-110 motion-reduce:group-hover:scale-100 transition-transform duration-300 glow-effect-strong motion-reduce:transition-none`}
                     >
                       <div className="w-full h-full rounded-2xl bg-background flex items-center justify-center">
-                        <Icon className="w-7 h-7 text-primary group-hover:text-accent transition-colors duration-300" />
+                        <Icon className="w-7 h-7 text-primary group-hover:text-accent transition-colors duration-300 motion-reduce:transition-none" />
                       </div>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300">
+                      <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300 motion-reduce:transition-none">
                         {category.name}
                       </h3>
                       {/* Count pill */}
