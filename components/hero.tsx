@@ -16,14 +16,14 @@ export function Hero() {
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-5xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 backdrop-blur-xl border border-primary/20 mb-8 group hover:bg-primary/20 transition-all duration-300 cursor-pointer">
-            <Sparkles className="w-4 h-4 text-primary group-hover:rotate-180 transition-transform duration-500" />
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 backdrop-blur-xl border border-primary/20 mb-8 group hover:bg-primary/20 transition-all duration-300 cursor-pointer motion-reduce:transition-none">
+            <Sparkles className="w-4 h-4 text-primary group-hover:rotate-180 transition-transform duration-500 motion-reduce:transform-none motion-reduce:transition-none" />
             <span className="text-sm text-primary font-medium">Nuevos productos cada semana</span>
           </div>
 
           {/* Seasonal badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 backdrop-blur-xl border border-accent/20 mb-8 group hover:bg-accent/20 transition-all duration-300 cursor-pointer">
-            <Sparkles className="w-4 h-4 text-accent group-hover:scale-110 transition-transform duration-500" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 backdrop-blur-xl border border-accent/20 mb-8 group hover:bg-accent/20 transition-all duration-300 cursor-pointer motion-reduce:transition-none">
+            <Sparkles className="w-4 h-4 text-accent group-hover:scale-110 transition-transform duration-500 motion-reduce:transform-none motion-reduce:transition-none" />
             <span className="text-xs text-accent font-medium">Colección Otoño 2025</span>
           </div>
 
@@ -50,14 +50,14 @@ export function Hero() {
             <Button
               asChild
               size="lg"
-              className="rounded-full bg-cta hover:bg-cta-hover text-white px-10 py-6 text-lg font-semibold group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_-5px] hover:shadow-cta ring-1 ring-cta/30 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cta/40"
+              className="rounded-full bg-cta hover:bg-cta-hover text-white px-10 py-6 text-lg font-semibold group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_-5px] hover:shadow-cta ring-1 ring-cta/30 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cta/40 motion-reduce:hover:scale-100 motion-reduce:transition-none motion-reduce:hover:shadow-none"
             >
               <a href="#productos" aria-label="Ir a productos">
                 <span className="relative z-10 flex items-center gap-2">
                   Comprar ahora
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300 motion-reduce:transform-none motion-reduce:transition-none" />
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-cta to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-r from-cta to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300 motion-reduce:opacity-100 motion-reduce:transition-none" />
               </a>
             </Button>
 
@@ -65,7 +65,7 @@ export function Hero() {
               asChild
               size="lg"
               variant="outline"
-              className="rounded-full border-2 border-primary/30 hover:border-primary bg-transparent hover:bg-primary/10 backdrop-blur-xl px-8 py-6 text-lg font-semibold transition-all duration-300 hover:scale-105 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30"
+              className="rounded-full border-2 border-primary/30 hover:border-primary bg-transparent hover:bg-primary/10 backdrop-blur-xl px-8 py-6 text-lg font-semibold transition-all duration-300 hover:scale-105 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 motion-reduce:hover:scale-100 motion-reduce:transition-none"
             >
               <a href="#ofertas" aria-label="Ver ofertas">Ver ofertas</a>
             </Button>
@@ -79,7 +79,7 @@ export function Hero() {
               { value: "4.9★", label: "Valoración" },
             ].map((stat, index) => (
               <div key={index} className="group cursor-pointer">
-                <div className="text-3xl md:text-4xl font-bold bg-gradient-to-br from-primary to-accent bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">
+                <div className="text-3xl md:text-4xl font-bold bg-gradient-to-br from-primary to-accent bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300 motion-reduce:transform-none motion-reduce:transition-none">
                   {stat.value}
                 </div>
                 <div className="text-sm text-muted-foreground mt-1">{stat.label}</div>
