@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next'
+﻿import type { Metadata, Viewport } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import { Analytics } from '@vercel/analytics/next'
@@ -10,9 +10,14 @@ export const metadata: Metadata = {
   description: 'Created with v0',
   generator: 'v0.app',
   applicationName: 'TechFlow',
-  themeColor: '#000000',
   robots: { index: true, follow: true },
-  viewport: 'width=device-width, initial-scale=1',
+}
+
+// Next 15: move viewport and themeColor to the dedicated export
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#000000',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -26,8 +31,3 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   )
 }
-
-
-
-
-
