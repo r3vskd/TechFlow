@@ -22,7 +22,15 @@ export function Navigation() {
   }, [])
 
   return (
-    <nav
+    <>
+      {/* Skip to content link for keyboard users */}
+      <a
+        href="#productos"
+        className="skip-to-content"
+      >
+        Saltar al contenido
+      </a>
+      <nav
       className={`fixed top-12 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
           ? "bg-background/70 backdrop-blur-2xl border-b border-border shadow-lg shadow-primary/10"
@@ -115,5 +123,6 @@ export function Navigation() {
         </div>
       </div>
     </nav>
+    </>
   )
 }
