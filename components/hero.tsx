@@ -30,7 +30,7 @@ export function Hero() {
           {/* Main heading */}
           <h1 className="text-6xl md:text-8xl lg:text-8xl font-extrabold mb-6 leading-tight">
             <span className="block text-balance">El Futuro de la</span>
-            <span className="block bg-gradient-to-r from-primary via-accent to-cta bg-clip-text text-transparent animate-gradient">
+            <span className="block bg-gradient-to-r from-primary via-accent to-cta bg-clip-text text-transparent animate-gradient motion-reduce:animate-none">
               Tecnología
             </span>
             <span className="block text-balance">en tus manos</span>
@@ -50,7 +50,7 @@ export function Hero() {
             <Button
               asChild
               size="lg"
-              className="rounded-full bg-cta hover:bg-cta-hover text-white px-10 py-6 text-lg font-semibold group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_-5px] hover:shadow-cta ring-1 ring-cta/30 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cta/40 motion-reduce:hover:scale-100 motion-reduce:transition-none motion-reduce:hover:shadow-none"
+              className="rounded-full bg-cta hover:bg-cta-hover text-white px-10 py-6 text-lg font-semibold group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_-5px] hover:shadow-cta ring-1 ring-cta/30 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cta/40 focus-visible:ring-offset-2 focus-visible:ring-offset-background motion-reduce:hover:scale-100 motion-reduce:transition-none motion-reduce:hover:shadow-none"
             >
               <a href="#productos" aria-label="Ir a productos">
                 <span className="relative z-10 flex items-center gap-2">
@@ -65,7 +65,7 @@ export function Hero() {
               asChild
               size="lg"
               variant="outline"
-              className="rounded-full border-2 border-primary/30 hover:border-primary bg-transparent hover:bg-primary/10 backdrop-blur-xl px-8 py-6 text-lg font-semibold transition-all duration-300 hover:scale-105 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 motion-reduce:hover:scale-100 motion-reduce:transition-none"
+              className="rounded-full border-2 border-primary/30 hover:border-primary bg-transparent hover:bg-primary/10 backdrop-blur-xl px-8 py-6 text-lg font-semibold transition-all duration-300 hover:scale-105 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 focus-visible:ring-offset-2 focus-visible:ring-offset-background motion-reduce:hover:scale-100 motion-reduce:transition-none"
             >
               <a href="#ofertas" aria-label="Ver ofertas">Ver ofertas</a>
             </Button>
@@ -93,7 +93,7 @@ export function Hero() {
       <a
         href="#productos"
         aria-label="Desplazar a productos"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce motion-reduce:animate-none"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce motion-reduce:animate-none focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 rounded-full px-2"
       >
         <div className="w-6 h-10 rounded-full border-2 border-primary/30 flex items-start justify-center p-2">
           <div className="w-1.5 h-3 bg-primary rounded-full animate-pulse" />
