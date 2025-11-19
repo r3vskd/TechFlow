@@ -37,7 +37,7 @@ export function AnnouncementBar() {
     <div className="fixed top-0 left-0 right-0 z-[60]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div
-          className="h-12 mt-2 rounded-full bg-gradient-to-r from-cta via-accent to-primary text-white shadow-soft ring-1 ring-white/10 flex items-center justify-center gap-3"
+          className="h-12 mt-2 rounded-full bg-gradient-to-r from-cta via-accent to-primary text-white shadow-soft ring-1 ring-white/10 flex items-center justify-center gap-3 transition-all duration-300 motion-reduce:transition-none motion-reduce:transform-none"
           role="region"
           aria-live="polite"
           aria-label="Anuncio de temporada"
@@ -58,7 +58,7 @@ export function AnnouncementBar() {
             aria-label="Cerrar anuncio"
             onClick={handleClose}
             type="button"
-            className="ml-auto mr-2 grid place-items-center rounded-full bg-white/15 hover:bg-white/25 transition-colors w-7 h-7 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/40"
+            className="ml-auto mr-2 grid place-items-center rounded-full bg-white/15 hover:bg-white/25 transition-colors w-7 h-7 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/40 motion-reduce:transition-none"
             aria-controls="announcement-bar"
           >
             <X className="w-4 h-4" />
