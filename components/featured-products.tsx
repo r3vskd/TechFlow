@@ -80,7 +80,7 @@ export function FeaturedProducts() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {products.map((product) => (
             <div key={product.id} className="group relative cursor-pointer">
-              <div className="relative rounded-3xl bg-card backdrop-blur-xl border border-border hover:border-primary/50 transition-all duration-500 overflow-hidden hover:scale-[1.02] group-hover:-translate-y-1 shadow-sm hover:shadow-lg hover:shadow-primary/10 motion-reduce:hover:scale-100 motion-reduce:group-hover:translate-y-0 motion-reduce:transition-none">
+              <div className="relative rounded-3xl bg-card backdrop-blur-xl border border-border hover:border-primary/50 transition-all duration-500 overflow-hidden hover:scale-[1.02] group-hover:-translate-y-1 shadow-sm hover:shadow-lg hover:shadow-primary/10 motion-reduce:hover:scale-100 motion-reduce:group-hover:translate-y-0 motion-reduce:transition-none focus-within:ring-2 focus-within:ring-primary/30 focus-within:ring-offset-2 focus-within:ring-offset-background">
                 {/* Glow effect */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-accent/0 to-cta/0 group-hover:from-primary/5 group-hover:via-accent/5 group-hover:to-cta/5 transition-all duration-500" />
 
@@ -106,7 +106,7 @@ export function FeaturedProducts() {
                     onClick={() => toggleFavorite(product.id)}
                     aria-pressed={favorites.includes(product.id)}
                     aria-label={favorites.includes(product.id) ? `Quitar ${product.name} de favoritos` : `Añadir ${product.name} a favoritos`}
-                    className="absolute top-4 right-4 w-10 h-10 rounded-full bg-background/80 backdrop-blur-xl border border-border flex items-center justify-center hover:scale-110 transition-all duration-300 hover:bg-background motion-reduce:hover:scale-100 motion-reduce:transition-none"
+                    className="absolute top-4 right-4 w-10 h-10 rounded-full bg-background/80 backdrop-blur-xl border border-border flex items-center justify-center hover:scale-110 transition-all duration-300 hover:bg-background motion-reduce:hover:scale-100 motion-reduce:transition-none focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                   >
                     <Heart
                       className={`w-5 h-5 transition-all duration-300 ${
@@ -120,7 +120,7 @@ export function FeaturedProducts() {
                     <Button
                       size="lg"
                       aria-label={`Añadir ${product.name} al carrito`}
-                      className="rounded-full bg-gradient-to-r from-cta to-primary hover:from-cta-hover hover:to-primary text-white font-semibold gap-2 hover:scale-105 transition-all duration-300 ring-1 ring-cta/30 motion-reduce:hover:scale-100 motion-reduce:transition-none"
+                      className="rounded-full bg-gradient-to-r from-cta to-primary hover:from-cta-hover hover:to-primary text-white font-semibold gap-2 hover:scale-105 transition-all duration-300 ring-1 ring-cta/30 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cta/40 focus-visible:ring-offset-2 focus-visible:ring-offset-background motion-reduce:hover:scale-100 motion-reduce:transition-none"
                     >
                       <ShoppingCart className="w-5 h-5" />
                       Añadir al Carrito
