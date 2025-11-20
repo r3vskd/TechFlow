@@ -6,6 +6,7 @@ import { useState, useEffect } from "react"
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
+  const [activeHash, setActiveHash] = useState<string>("#inicio")
 
   // Use effect to attach scroll listener once and clean up
   if (typeof window !== "undefined") {
@@ -19,6 +20,20 @@ export function Navigation() {
     const onScroll = () => setIsScrolled(window.scrollY > 50)
     window.addEventListener("scroll", onScroll, { passive: true })
     return () => window.removeEventListener("scroll", onScroll)
+  }, [])
+
+  // Track current hash to set aria-current and active styles in navigation
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  useEffect(() => {
+    const getActiveFromHash = () => {
+      const hash = window.location.hash
+      return hash && hash.length > 0 ? hash : "#inicio"
+    }
+    // Initialize on mount
+    setActiveHash(getActiveFromHash())
+    const onHashChange = () => setActiveHash(getActiveFromHash())
+    window.addEventListener("hashchange", onHashChange, { passive: true })
+    return () => window.removeEventListener("hashchange", onHashChange)
   }, [])
 
   return (
@@ -58,28 +73,40 @@ export function Navigation() {
           <div className="hidden md:flex items-center gap-8">
             <a
               href="#inicio"
-              className="text-foreground/80 hover:text-primary transition-colors duration-300 relative group focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 rounded-full px-2 motion-reduce:transition-none"
+              aria-label="Ir a inicio"
+              aria-current={activeHash === "#inicio" ? "page" : undefined}
+              data-active={activeHash === "#inicio"}
+              className="text-foreground/80 hover:text-primary transition-colors duration-300 relative group focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 rounded-full px-2 motion-reduce:transition-none data-[active=true]:text-primary data-[active=true]:font-semibold"
             >
               Inicio
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 rounded-full motion-reduce:transition-none" />
             </a>
             <a
               href="#productos"
-              className="text-foreground/80 hover:text-primary transition-colors duration-300 relative group focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 rounded-full px-2 motion-reduce:transition-none"
+              aria-label="Ir a productos destacados"
+              aria-current={activeHash === "#productos" ? "page" : undefined}
+              data-active={activeHash === "#productos"}
+              className="text-foreground/80 hover:text-primary transition-colors duration-300 relative group focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 rounded-full px-2 motion-reduce:transition-none data-[active=true]:text-primary data-[active=true]:font-semibold"
             >
               Productos
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 rounded-full motion-reduce:transition-none" />
             </a>
             <a
               href="#categorias"
-              className="text-foreground/80 hover:text-primary transition-colors duration-300 relative group focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 rounded-full px-2 motion-reduce:transition-none"
+              aria-label="Ir a categorías"
+              aria-current={activeHash === "#categorias" ? "page" : undefined}
+              data-active={activeHash === "#categorias"}
+              className="text-foreground/80 hover:text-primary transition-colors duration-300 relative group focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 rounded-full px-2 motion-reduce:transition-none data-[active=true]:text-primary data-[active=true]:font-semibold"
             >
               Categorías
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 rounded-full motion-reduce:transition-none" />
             </a>
             <a
               href="#ofertas"
-              className="text-foreground/80 hover:text-primary transition-colors duration-300 relative group focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 rounded-full px-2 motion-reduce:transition-none"
+              aria-label="Ir a ofertas"
+              aria-current={activeHash === "#ofertas" ? "page" : undefined}
+              data-active={activeHash === "#ofertas"}
+              className="text-foreground/80 hover:text-primary transition-colors duration-300 relative group focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 rounded-full px-2 motion-reduce:transition-none data-[active=true]:text-primary data-[active=true]:font-semibold"
             >
               Ofertas
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 rounded-full motion-reduce:transition-none" />
