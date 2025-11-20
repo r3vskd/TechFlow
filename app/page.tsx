@@ -13,7 +13,7 @@ export default function Home() {
       <div id="inicio">
         <Hero />
       </div>
-      <div id="categorias" className="scroll-mt-36">
+      <div>
         <Categories />
       </div>
       {/* Anchor para ofertas, posicionado antes de productos para navegación */}
