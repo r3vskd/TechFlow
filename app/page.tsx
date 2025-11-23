@@ -13,12 +13,14 @@ export default function Home() {
       <div id="home">
         <Hero />
       </div>
-      <div>
+      <div id="categories">
         <Categories />
       </div>
       {/* offers anchor before products */}
       <div id="offers" className="scroll-mt-36" aria-hidden="true" />
-      <FeaturedProducts />
+      <div id="products">
+        <FeaturedProducts />
+      </div>
       <div id="benefits">
         <Benefits />
       </div>
