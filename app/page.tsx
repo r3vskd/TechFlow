@@ -16,7 +16,7 @@ export default function Home() {
       <div>
         <Categories />
       </div>
-      {/* Anchor para ofertas, posicionado antes de productos para navegación */}
+      {/* offers anchor before products */}
       <div id="offers" className="scroll-mt-36" aria-hidden="true" />
       <FeaturedProducts />
       <div id="benefits">
