@@ -10,16 +10,16 @@ export default function Home() {
   return (
     <div className="min-h-screen pt-36">
       <Navigation />
-      <div id="inicio">
+      <div id="home">
         <Hero />
       </div>
       <div>
         <Categories />
       </div>
       {/* Anchor para ofertas, posicionado antes de productos para navegación */}
-      <div id="ofertas" className="scroll-mt-36" aria-hidden="true" />
+      <div id="offers" className="scroll-mt-36" aria-hidden="true" />
       <FeaturedProducts />
-      <div id="beneficios">
+      <div id="benefits">
         <Benefits />
       </div>
       <div id="newsletter">
