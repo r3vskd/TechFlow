@@ -29,11 +29,11 @@ export function Hero() {
 
           {/* Main heading */}
           <h1 className="text-6xl md:text-8xl lg:text-8xl font-extrabold mb-6 leading-tight">
-            <span className="block text-balance">El Futuro de la</span>
+            <span className="block text-balance">The Future of</span>
             <span className="block bg-gradient-to-r from-primary via-accent to-cta bg-clip-text text-transparent animate-gradient motion-reduce:animate-none">
-              Tecnología
+              Technology
             </span>
-            <span className="block text-balance">en tus manos</span>
+            <span className="block text-balance">in your hands</span>
           </h1>
 
           {/* Description */}
