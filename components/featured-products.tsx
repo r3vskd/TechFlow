@@ -67,13 +67,13 @@ export function FeaturedProducts() {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">
-            Productos{" "}
+            Featured{" "}
             <span className="bg-gradient-to-r from-primary via-accent to-cta bg-clip-text text-transparent">
-              Destacados
+              Products
             </span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto text-balance">
-            Los gadgets más innovadores y populares del momento
+            The most innovative and popular gadgets right now
           </p>
         </div>
 
