@@ -119,7 +119,7 @@ export function Navigation() {
               variant="ghost"
               size="icon"
               className="rounded-full hover:bg-primary/10 hover:text-primary transition-all duration-300 hover:scale-110"
-              aria-label="Buscar"
+              aria-label="Search"
               type="button"
             >
               <Search className="w-5 h-5" />
@@ -128,7 +128,7 @@ export function Navigation() {
               variant="ghost"
               size="icon"
               className="rounded-full hover:bg-primary/10 hover:text-primary transition-all duration-300 hover:scale-110 relative"
-              aria-label="Abrir carrito (3 artículos)"
+              aria-label="Open cart (3 items)"
               type="button"
             >
               <ShoppingCart className="w-5 h-5" />
@@ -137,14 +137,14 @@ export function Navigation() {
                 aria-live="polite"
               >
                 3
-                <span className="sr-only">artículos en el carrito</span>
+                <span className="sr-only">items in cart</span>
               </span>
             </Button>
             <Button
               variant="ghost"
               size="icon"
               className="md:hidden rounded-full hover:bg-primary/10 hover:text-primary transition-all duration-300"
-              aria-label="Abrir menú"
+              aria-label="Open menu"
               aria-expanded="false"
               type="button"
             >
