@@ -52,7 +52,7 @@ export function Hero() {
               size="lg"
               className="rounded-full bg-cta hover:bg-cta-hover text-white px-10 py-6 text-lg font-semibold group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_-5px] hover:shadow-cta ring-1 ring-cta/30 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cta/40 focus-visible:ring-offset-2 focus-visible:ring-offset-background motion-reduce:hover:scale-100 motion-reduce:transition-none motion-reduce:hover:shadow-none"
             >
-              <a href="#productos" aria-label="Ir a productos">
+              <a href="#products" aria-label="Go to products">
                 <span className="relative z-10 flex items-center gap-2">
                   Comprar ahora
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300 motion-reduce:transform-none motion-reduce:transition-none" />
@@ -67,7 +67,7 @@ export function Hero() {
               variant="outline"
               className="rounded-full border-2 border-primary/30 hover:border-primary bg-transparent hover:bg-primary/10 backdrop-blur-xl px-8 py-6 text-lg font-semibold transition-all duration-300 hover:scale-105 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 focus-visible:ring-offset-2 focus-visible:ring-offset-background motion-reduce:hover:scale-100 motion-reduce:transition-none"
             >
-              <a href="#ofertas" aria-label="Ver ofertas">Ver ofertas</a>
+              <a href="#offers" aria-label="View offers">View offers</a>
             </Button>
           </div>
 
