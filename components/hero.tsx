@@ -18,13 +18,13 @@ export function Hero() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 backdrop-blur-xl border border-primary/20 mb-8 group hover:bg-primary/20 transition-all duration-300 cursor-pointer motion-reduce:transition-none">
             <Sparkles className="w-4 h-4 text-primary group-hover:rotate-180 transition-transform duration-500 motion-reduce:transform-none motion-reduce:transition-none" />
-            <span className="text-sm text-primary font-medium">Nuevos productos cada semana</span>
+            <span className="text-sm text-primary font-medium">New products every week</span>
           </div>
 
           {/* Seasonal badge */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 backdrop-blur-xl border border-accent/20 mb-8 group hover:bg-accent/20 transition-all duration-300 cursor-pointer motion-reduce:transition-none">
             <Sparkles className="w-4 h-4 text-accent group-hover:scale-110 transition-transform duration-500 motion-reduce:transform-none motion-reduce:transition-none" />
-            <span className="text-xs text-accent font-medium">Colección Otoño 2025</span>
+            <span className="text-xs text-accent font-medium">Fall 2025 Collection</span>
           </div>
 
           {/* Main heading */}
