@@ -6,7 +6,7 @@ import { useState, useEffect } from "react"
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
-  const [activeHash, setActiveHash] = useState<string>("#inicio")
+  const [activeHash, setActiveHash] = useState<string>("#home")
 
   // Use effect to attach scroll listener once and clean up
   if (typeof window !== "undefined") {
@@ -27,7 +27,7 @@ export function Navigation() {
   useEffect(() => {
     const getActiveFromHash = () => {
       const hash = window.location.hash
-      return hash && hash.length > 0 ? hash : "#inicio"
+      return hash && hash.length > 0 ? hash : "#home"
     }
     // Initialize on mount
     setActiveHash(getActiveFromHash())
