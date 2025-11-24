@@ -47,11 +47,11 @@ export function Categories() {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">
-            Explora por{" "}
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Categoría</span>
+            Explore by{" "}
+            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Category</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto text-balance">
-            Encuentra exactamente lo que necesitas en nuestra amplia selección
+            Find exactly what you need in our wide selection
           </p>
         </div>
 
