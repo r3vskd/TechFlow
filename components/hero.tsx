@@ -38,11 +38,11 @@ export function Hero() {
 
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-6 leading-relaxed text-balance">
-            Descubre gadgets innovadores que transforman tu día a día. Calidad premium, diseño excepcional
-            y tecnología de vanguardia para todos.
+            Discover innovative gadgets that transform your everyday. Premium quality, exceptional design,
+            and cutting-edge technology for everyone.
           </p>
           <p className="text-sm text-muted-foreground max-w-xl mx-auto mb-10">
-            Envíos gratis desde $50 · Garantía extendida · Ofertas semanales
+            Free shipping from $50 · Extended warranty · Weekly offers
           </p>
 
           {/* CTA Buttons */}
