@@ -105,7 +105,7 @@ export function FeaturedProducts() {
                   <button
                     onClick={() => toggleFavorite(product.id)}
                     aria-pressed={favorites.includes(product.id)}
-                    aria-label={favorites.includes(product.id) ? `Quitar ${product.name} de favoritos` : `Añadir ${product.name} a favoritos`}
+                    aria-label={favorites.includes(product.id) ? `Remove ${product.name} from favorites` : `Add ${product.name} to favorites`}
                     className="absolute top-4 right-4 w-10 h-10 rounded-full bg-background/80 backdrop-blur-xl border border-border flex items-center justify-center hover:scale-110 transition-all duration-300 hover:bg-background motion-reduce:hover:scale-100 motion-reduce:transition-none focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                   >
                     <Heart
@@ -119,11 +119,11 @@ export function FeaturedProducts() {
                   <div className="absolute inset-0 bg-background/95 backdrop-blur-xl opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-all duration-300 flex items-center justify-center motion-reduce:transition-none">
                     <Button
                       size="lg"
-                      aria-label={`Añadir ${product.name} al carrito`}
+                      aria-label={`Add ${product.name} to cart`}
                       className="rounded-full bg-gradient-to-r from-cta to-primary hover:from-cta-hover hover:to-primary text-white font-semibold gap-2 hover:scale-105 transition-all duration-300 ring-1 ring-cta/30 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cta/40 focus-visible:ring-offset-2 focus-visible:ring-offset-background motion-reduce:hover:scale-100 motion-reduce:transition-none"
                     >
                       <ShoppingCart className="w-5 h-5" />
-                      Añadir al Carrito
+                      Add to Cart
                     </Button>
                   </div>
                 </div>
@@ -141,14 +141,14 @@ export function FeaturedProducts() {
                       <Star className="w-4 h-4 fill-accent text-accent" aria-hidden="true" />
                       <span className="text-sm font-semibold">{product.rating}</span>
                     </div>
-                    <span className="text-xs text-muted-foreground">({product.reviews} reseñas)</span>
-                    <span className="sr-only">Valoración {product.rating} sobre 5 con {product.reviews} reseñas</span>
+                    <span className="text-xs text-muted-foreground">({product.reviews} reviews)</span>
+                    <span className="sr-only">Rating {product.rating} out of 5 with {product.reviews} reviews</span>
                   </div>
 
                   {/* Price */}
                   <div
                     className="flex items-center gap-3"
-                    aria-label={`Precio actual $${product.price}. Precio original $${product.originalPrice}.`}
+                    aria-label={`Current price $${product.price}. Original price $${product.originalPrice}.`}
                   >
                     <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">${product.price}</span>
                     <span className="text-sm text-muted-foreground line-through">${product.originalPrice}</span>
@@ -156,8 +156,8 @@ export function FeaturedProducts() {
 
                   {/* Extra info */}
                   <div className="mt-4 text-xs text-muted-foreground flex items-center gap-3">
-                    <span className="px-2 py-1 rounded-full bg-secondary/50 border border-border">Envío 24-48h</span>
-                    <span className="px-2 py-1 rounded-full bg-secondary/50 border border-border">Stock disponible</span>
+                    <span className="px-2 py-1 rounded-full bg-secondary/50 border border-border">Shipping 24–48h</span>
+                    <span className="px-2 py-1 rounded-full bg-secondary/50 border border-border">In stock</span>
                   </div>
                 </div>
               </div>
@@ -173,7 +173,7 @@ export function FeaturedProducts() {
             variant="outline"
             className="rounded-full border-2 border-primary/30 hover:border-primary bg-transparent hover:bg-primary/10 backdrop-blur-xl px-8 py-6 text-lg font-semibold transition-all duration-300 hover:scale-105 motion-reduce:hover:scale-100 motion-reduce:transition-none"
           >
-            <a href="#productos" aria-label="Ver todos los productos">Ver Todos los Productos</a>
+            <a href="#products" aria-label="View all products">View All Products</a>
           </Button>
         </div>
       </div>
