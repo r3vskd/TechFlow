@@ -54,10 +54,10 @@ export function Navigation() {
     >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          {/* Logo as link to Inicio */}
+          {/* logo link */}
           <a
-            href="#inicio"
-            aria-label="Ir a inicio"
+            href="#home"
+            aria-label="Go to home"
             className="flex items-center gap-2 group cursor-pointer focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 rounded-full px-2"
           >
             <span className="relative">
@@ -69,46 +69,46 @@ export function Navigation() {
             </span>
           </a>
 
-          {/* Desktop Menu */}
+          {/* desktop menu */}
           <div className="hidden md:flex items-center gap-8">
             <a
-              href="#inicio"
-              aria-label="Ir a inicio"
-              aria-current={activeHash === "#inicio" ? "page" : undefined}
-              data-active={activeHash === "#inicio"}
+              href="#home"
+              aria-label="Go to home"
+              aria-current={activeHash === "#home" ? "page" : undefined}
+              data-active={activeHash === "#home"}
               className="text-foreground/80 hover:text-primary transition-colors duration-300 relative group focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 rounded-full px-2 motion-reduce:transition-none data-[active=true]:text-primary data-[active=true]:font-semibold"
             >
-              Inicio
+              Home
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 rounded-full motion-reduce:transition-none" />
             </a>
             <a
-              href="#productos"
-              aria-label="Ir a productos destacados"
-              aria-current={activeHash === "#productos" ? "page" : undefined}
-              data-active={activeHash === "#productos"}
+              href="#products"
+              aria-label="Go to featured products"
+              aria-current={activeHash === "#products" ? "page" : undefined}
+              data-active={activeHash === "#products"}
               className="text-foreground/80 hover:text-primary transition-colors duration-300 relative group focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 rounded-full px-2 motion-reduce:transition-none data-[active=true]:text-primary data-[active=true]:font-semibold"
             >
-              Productos
+              Products
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 rounded-full motion-reduce:transition-none" />
             </a>
             <a
-              href="#categorias"
-              aria-label="Ir a categorías"
-              aria-current={activeHash === "#categorias" ? "page" : undefined}
-              data-active={activeHash === "#categorias"}
+              href="#categories"
+              aria-label="Go to categories"
+              aria-current={activeHash === "#categories" ? "page" : undefined}
+              data-active={activeHash === "#categories"}
               className="text-foreground/80 hover:text-primary transition-colors duration-300 relative group focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 rounded-full px-2 motion-reduce:transition-none data-[active=true]:text-primary data-[active=true]:font-semibold"
             >
-              Categorías
+              Categories
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 rounded-full motion-reduce:transition-none" />
             </a>
             <a
-              href="#ofertas"
-              aria-label="Ir a ofertas"
-              aria-current={activeHash === "#ofertas" ? "page" : undefined}
-              data-active={activeHash === "#ofertas"}
+              href="#offers"
+              aria-label="Go to offers"
+              aria-current={activeHash === "#offers" ? "page" : undefined}
+              data-active={activeHash === "#offers"}
               className="text-foreground/80 hover:text-primary transition-colors duration-300 relative group focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 rounded-full px-2 motion-reduce:transition-none data-[active=true]:text-primary data-[active=true]:font-semibold"
             >
-              Ofertas
+              Offers
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 rounded-full motion-reduce:transition-none" />
             </a>
           </div>
