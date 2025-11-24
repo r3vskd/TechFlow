@@ -38,12 +38,12 @@ export function Navigation() {
 
   return (
     <>
-      {/* Skip to content link for keyboard users */}
+      {/* skip link */}
       <a
-        href="#productos"
+        href="#products"
         className="skip-to-content"
       >
-        Saltar al contenido
+        Skip to content
       </a>
       <nav
       className={`fixed top-12 left-0 right-0 z-50 transition-all duration-500 ${
