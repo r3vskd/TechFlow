@@ -5,33 +5,33 @@ import { Truck, Shield, Headphones, CreditCard } from "lucide-react"
 const benefits = [
   {
     icon: Truck,
-    title: "Envío Gratis",
-    description: "En pedidos superiores a $50",
+    title: "Free Shipping",
+    description: "On orders over $50",
     color: "text-primary",
   },
   {
     icon: Shield,
-    title: "Garantía Extendida",
-    description: "2 años de protección total",
+    title: "Extended Warranty",
+    description: "2 years of total protection",
     color: "text-accent",
   },
   {
     icon: Headphones,
-    title: "Soporte 24/7",
-    description: "Siempre disponibles para ti",
+    title: "24/7 Support",
+    description: "Always available for you",
     color: "text-cta",
   },
   {
     icon: CreditCard,
-    title: "Pago Seguro",
-    description: "Múltiples métodos de pago",
+    title: "Secure Payment",
+    description: "Multiple payment methods",
     color: "text-hover-accent",
   },
 ]
 
 export function Benefits() {
   return (
-    <section id="beneficios" className="py-24 relative">
+    <section id="benefits" className="py-24 relative">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {benefits.map((benefit, index) => {
@@ -40,7 +40,7 @@ export function Benefits() {
               <div key={index} className="group relative">
                 <article
                   className="relative p-8 rounded-3xl bg-card backdrop-blur-xl border border-border hover:border-primary/50 transition-all duration-500 hover:scale-105 overflow-hidden"
-                  aria-labelledby={`beneficio-${index}`}
+                  aria-labelledby={`benefit-${index}`}
                 >
                   {/* Glow effect */}
                   <div
@@ -53,7 +53,7 @@ export function Benefits() {
                     >
                       <Icon className={`w-7 h-7 ${benefit.color}`} />
                     </div>
-                    <h3 id={`beneficio-${index}`} className="font-bold text-xl mb-2 group-hover:text-primary transition-colors duration-300">
+                    <h3 id={`benefit-${index}`} className="font-bold text-xl mb-2 group-hover:text-primary transition-colors duration-300">
                       {benefit.title}
                     </h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">{benefit.description}</p>
