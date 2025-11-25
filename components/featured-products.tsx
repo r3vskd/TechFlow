@@ -14,43 +14,43 @@ const products = [
     rating: 4.8,
     reviews: 234,
     image: "/modern-smartwatch-black.jpg",
-    badge: "Más Vendido",
+    badge: "Best Seller",
     badgeColor: "bg-cta",
   },
   {
     id: 2,
-    name: "Auriculares Noise Pro",
+    name: "Noise Pro Headphones",
     category: "Audio",
     price: 199.99,
     originalPrice: 279.99,
     rating: 4.9,
     reviews: 456,
     image: "/premium-wireless-headphones.png",
-    badge: "Nuevo",
+    badge: "New",
     badgeColor: "bg-primary",
   },
   {
     id: 3,
-    name: "Cámara Smart 4K",
-    category: "Fotografía",
+    name: "Smart 4K Camera",
+    category: "Photography",
     price: 449.99,
     originalPrice: 599.99,
     rating: 4.7,
     reviews: 189,
     image: "/4k-smart-camera-security.jpg",
-    badge: "Oferta",
+    badge: "Deal",
     badgeColor: "bg-accent",
   },
   {
     id: 4,
-    name: "Hub Domótico Elite",
+    name: "Elite Smart Hub",
     category: "Smart Home",
     price: 179.99,
     originalPrice: 249.99,
     rating: 4.6,
     reviews: 312,
     image: "/smart-home-hub.png",
-    badge: "Destacado",
+    badge: "Featured",
     badgeColor: "bg-hover-accent",
   },
 ]
@@ -63,7 +63,7 @@ export function FeaturedProducts() {
   }
 
   return (
-    <section id="productos" className="py-24 relative scroll-mt-36">
+    <section id="products" className="py-24 relative scroll-mt-36">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">
