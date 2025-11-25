@@ -43,10 +43,10 @@ const categories = [
 
 export function Categories() {
   return (
-    <section id="categories" className="py-24 relative scroll-mt-36">
+    <section id="categories" className="py-24 relative scroll-mt-36" aria-labelledby="categories-heading">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">
+          <h2 id="categories-heading" className="text-4xl md:text-5xl font-bold mb-4 text-balance">
             Explore by{" "}
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Category</span>
           </h2>
@@ -55,11 +55,11 @@ export function Categories() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4" role="list">
           {categories.map((category, index) => {
             const Icon = category.icon
             return (
-              <div key={index} className="group relative cursor-pointer">
+              <div key={index} className="group relative cursor-pointer" role="listitem">
                 <a
                   href="#products"
                   aria-label={`Explore category ${category.name}`}
