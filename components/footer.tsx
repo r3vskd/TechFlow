@@ -16,8 +16,8 @@ export function Footer() {
               </span>
             </div>
             <p className="text-muted-foreground leading-relaxed mb-6 max-w-sm">
-              Los gadgets electrónicos más innovadores. Calidad premium y tecnología de vanguardia al
-              alcance de tu mano. Disfruta envíos gratis desde $50 y soporte 24/7.
+              The most innovative electronic gadgets. Premium quality and cutting-edge technology at
+              your fingertips. Enjoy free shipping from $50 and 24/7 support.
             </p>
             <div className="flex items-center gap-3">
               {[
@@ -29,7 +29,7 @@ export function Footer() {
                 <a
                   key={name}
                   href={href}
-                  aria-label={`Visitar ${name}`}
+                  aria-label={`Visit ${name}`}
                   className="w-11 h-11 rounded-full bg-secondary hover:bg-primary/20 border border-border hover:border-primary/50 flex items-center justify-center transition-all duration-300 hover:scale-110 group ring-1 ring-border hover:ring-primary/40 glow-effect focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40 motion-reduce:hover:scale-100 motion-reduce:transition-none"
                 >
                   <Icon className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
@@ -41,9 +41,9 @@ export function Footer() {
 
           {/* Links columns */}
           <div>
-            <h3 className="font-bold mb-4 text-foreground">Comprar</h3>
+            <h3 className="font-bold mb-4 text-foreground">Shop</h3>
             <ul className="space-y-3">
-              {["Todos los Productos", "Nuevos Lanzamientos", "Ofertas", "Más Vendidos"].map((item) => (
+              {["All Products", "New Releases", "Offers", "Best Sellers"].map((item) => (
                 <li key={item}>
                   <a href="#" className="text-muted-foreground hover:text-primary transition-colors duration-300">
                     {item}
@@ -54,9 +54,9 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-bold mb-4 text-foreground">Ayuda</h3>
+            <h3 className="font-bold mb-4 text-foreground">Help</h3>
             <ul className="space-y-3">
-              {["Centro de Ayuda", "Envíos", "Devoluciones", "Garantía"].map((item) => (
+              {["Help Center", "Shipping", "Returns", "Warranty"].map((item) => (
                 <li key={item}>
                   <a href="#" className="text-muted-foreground hover:text-primary transition-colors duration-300">
                     {item}
@@ -67,9 +67,9 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-bold mb-4 text-foreground">Empresa</h3>
+            <h3 className="font-bold mb-4 text-foreground">Company</h3>
             <ul className="space-y-3">
-              {["Sobre Nosotros", "Contacto", "Blog", "Afiliados"].map((item) => (
+              {["About Us", "Contact", "Blog", "Affiliates"].map((item) => (
                 <li key={item}>
                   <a href="#" className="text-muted-foreground hover:text-primary transition-colors duration-300">
                     {item}
@@ -82,7 +82,7 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-muted-foreground">© 2025 TechFlow. Todos los derechos reservados.</p>
+          <p className="text-sm text-muted-foreground">© 2025 TechFlow. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
               Privacidad
@@ -94,12 +94,12 @@ export function Footer() {
               Cookies
             </a>
             <a
-              href="#inicio"
-              aria-label="Volver al inicio"
+              href="#home"
+              aria-label="Back to home"
               className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors duration-300 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 rounded-full px-2 motion-reduce:transition-none"
             >
               <ArrowUp className="w-4 h-4" aria-hidden="true" />
-              <span>Inicio</span>
+              <span>Home</span>
             </a>
           </div>
         </div>
