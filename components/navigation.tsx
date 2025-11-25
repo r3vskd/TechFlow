@@ -45,7 +45,9 @@ export function Navigation() {
       >
         Skip to content
       </a>
-      <nav
+    <nav
+      role="navigation"
+      aria-label="Main navigation"
       className={`fixed top-12 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
           ? "bg-background/70 backdrop-blur-2xl border-b border-border shadow-lg shadow-primary/10"
