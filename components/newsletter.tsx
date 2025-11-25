@@ -15,12 +15,12 @@ export function Newsletter() {
     const isValid = /.+@.+\..+/.test(email)
     if (!isValid) {
       emailInput.setAttribute('aria-invalid', 'true')
-      statusEl.textContent = 'Por favor, ingresa un correo válido.'
+      statusEl.textContent = 'Please enter a valid email.'
       statusEl.setAttribute('role', 'alert')
       return
     }
     emailInput.removeAttribute('aria-invalid')
-    statusEl.textContent = '¡Gracias por suscribirte! Te enviaremos novedades pronto.'
+    statusEl.textContent = 'Thanks for subscribing! We will send updates soon.'
     statusEl.removeAttribute('role')
     form.reset()
   }
@@ -38,24 +38,24 @@ export function Newsletter() {
 
             <div className="relative z-10 text-center">
               <h2 id="newsletter-heading" className="text-3xl md:text-5xl font-bold mb-4 text-balance">
-                Únete a Nuestra{" "}
+                Join Our{" "}
                 <span className="bg-gradient-to-r from-primary via-accent to-cta bg-clip-text text-transparent">
-                  Comunidad
+                  Community
                 </span>
               </h2>
               <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto text-balance">
-                Recibe ofertas exclusivas, lanzamientos anticipados y las últimas novedades en tecnología
+                Get exclusive offers, early releases, and the latest tech updates
               </p>
 
-              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" aria-label="Formulario de suscripción">
+              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" aria-label="Subscription form">
                 <Input
                   type="email"
-                  aria-label="Correo electrónico"
+                  aria-label="Email"
                   id="newsletter-email"
                   name="email"
                   aria-describedby="newsletter-status"
                   required
-                  placeholder="tu@email.com"
+                  placeholder="your@email.com"
                   className="rounded-full bg-background/50 backdrop-blur-xl border-border focus:border-primary h-14 px-6 text-base focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                 />
                 <Button
@@ -63,14 +63,14 @@ export function Newsletter() {
                   type="submit"
                   className="rounded-full bg-gradient-to-r from-cta to-primary hover:from-cta-hover hover:to-primary text-white font-semibold px-8 gap-2 h-14 hover:scale-105 transition-all duration-300 hover:shadow-[0_0_40px_-5px] hover:shadow-cta ring-1 ring-cta/30 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cta/40 focus-visible:ring-offset-2 focus-visible:ring-offset-background motion-reduce:hover:scale-100 motion-reduce:transition-none motion-reduce:hover:shadow-none"
                 >
-                  Recibir novedades
+                  Get updates
                   <Send className="w-5 h-5" />
                 </Button>
               </form>
 
-              <p className="text-xs text-muted-foreground mt-4">No spam. Cancela cuando quieras. 🔒</p>
+              <p className="text-xs text-muted-foreground mt-4">No spam. Cancel anytime.</p>
               <div id="newsletter-status" aria-live="polite" className="mt-2 text-sm text-primary"></div>
-              <div className="mt-2 text-[10px] text-muted-foreground">Protegemos tus datos según nuestra política de privacidad.</div>
+              <div className="mt-2 text-[10px] text-muted-foreground">We protect your data per our privacy policy.</div>
             </div>
           </div>
         </div>
