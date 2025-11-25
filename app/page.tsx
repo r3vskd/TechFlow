@@ -10,10 +10,10 @@ export default function Home() {
   return (
     <main className="min-h-screen pt-36" aria-label="Home page">
       <Navigation />
-      <div id="home">
+      <div id="home" className="scroll-mt-36">
         <Hero />
       </div>
-      <div id="categories">
+      <div id="categories" className="scroll-mt-36">
         <Categories />
       </div>
       {/* offers anchor before products */}
