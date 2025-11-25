@@ -18,13 +18,13 @@ export default function Home() {
       </div>
       {/* offers anchor before products */}
       <div id="offers" className="scroll-mt-36" aria-hidden="true" />
-      <div id="products">
+      <div id="products" className="scroll-mt-36">
         <FeaturedProducts />
       </div>
-      <div id="benefits">
+      <div id="benefits" className="scroll-mt-36">
         <Benefits />
       </div>
-      <div id="newsletter">
+      <div id="newsletter" className="scroll-mt-36">
         <Newsletter />
       </div>
       <Footer />
