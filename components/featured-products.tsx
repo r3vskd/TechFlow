@@ -84,7 +84,7 @@ export function FeaturedProducts() {
                 {/* glow */}
                 <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-br from-primary/0 via-accent/0 to-cta/0 group-hover:from-primary/5 group-hover:via-accent/5 group-hover:to-cta/5 transition-all duration-500" />
 
-                {/* Image container */}
+                {/* image */}
                 <div className="relative aspect-square overflow-hidden rounded-t-3xl bg-secondary/50">
                   <img
                     src={product.image || "/placeholder.svg"}
@@ -94,14 +94,14 @@ export function FeaturedProducts() {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 motion-reduce:transform-none motion-reduce:transition-none"
                   />
 
-                  {/* Badge */}
+                  {/* badge */}
                   <div
                     className={`absolute top-4 left-4 px-3 py-1.5 rounded-full ${product.badgeColor} text-white text-xs font-semibold backdrop-blur-xl`}
                   >
                     {product.badge}
                   </div>
 
-                  {/* Favorite button */}
+                  {/* fav */}
                   <button
                     onClick={() => toggleFavorite(product.id)}
                     aria-pressed={favorites.includes(product.id)}
@@ -115,7 +115,7 @@ export function FeaturedProducts() {
                     />
                   </button>
 
-                  {/* Quick add overlay - also show on focus for keyboard users */}
+                  {/* quick add */}
                   <div className="absolute inset-0 bg-background/95 backdrop-blur-xl opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-all duration-300 flex items-center justify-center motion-reduce:transition-none">
                     <Button
                       size="lg"
@@ -128,14 +128,14 @@ export function FeaturedProducts() {
                   </div>
                 </div>
 
-                {/* Product info */}
+                {/* info */}
                 <div className="p-6 relative z-10">
                   <div className="text-xs text-primary font-semibold mb-2">{product.category}</div>
                   <h3 className="font-bold text-lg mb-2 group-hover:text-primary transition-colors duration-300 text-balance">
                     {product.name}
                   </h3>
 
-                  {/* Rating */}
+                  {/* rating */}
                   <div className="flex items-center gap-2 mb-3">
                     <div className="flex items-center gap-1">
                       <Star className="w-4 h-4 fill-accent text-accent" aria-hidden="true" />
@@ -145,7 +145,7 @@ export function FeaturedProducts() {
                     <span className="sr-only">Rating {product.rating} out of 5 with {product.reviews} reviews</span>
                   </div>
 
-                  {/* Price */}
+                  {/* price */}
                   <div
                     className="flex items-center gap-3"
                     aria-label={`Current price $${product.price}. Original price $${product.originalPrice}.`}
@@ -154,7 +154,7 @@ export function FeaturedProducts() {
                     <span className="text-sm text-muted-foreground line-through">${product.originalPrice}</span>
                   </div>
 
-                  {/* Extra info */}
+                  {/* extra */}
                   <div className="mt-4 text-xs text-muted-foreground flex items-center gap-3">
                     <span className="px-2 py-1 rounded-full bg-secondary/50 border border-border">Shipping 24–48h</span>
                     <span className="px-2 py-1 rounded-full bg-secondary/50 border border-border">In stock</span>
@@ -165,7 +165,7 @@ export function FeaturedProducts() {
           ))}
         </div>
 
-        {/* View all button */}
+        {/* view all */}
         <div className="text-center mt-12">
           <Button
             asChild
