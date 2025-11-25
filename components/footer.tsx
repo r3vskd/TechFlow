@@ -2,12 +2,12 @@ import { Zap, Facebook, Twitter, Instagram, Youtube, ArrowUp } from "lucide-reac
 
 export function Footer() {
   return (
-    <footer className="relative border-t border-border">
-      {/* Gradient top accent */}
+    <footer className="relative border-t border-border" aria-label="Footer">
+      {/* accent */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-primary via-accent to-cta" />
       <div className="container mx-auto px-4 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
-          {/* Brand */}
+          {/* brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <Zap className="w-8 h-8 text-primary" />
@@ -39,7 +39,7 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Links columns */}
+          {/* links */}
           <div>
             <h3 className="font-bold mb-4 text-foreground">Shop</h3>
             <ul className="space-y-3">
@@ -80,15 +80,15 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Bottom bar */}
+        {/* bottom */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">© 2025 TechFlow. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
-              Privacidad
+              Privacy
             </a>
             <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
-              Términos
+              Terms
             </a>
             <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
               Cookies
