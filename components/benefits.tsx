@@ -31,18 +31,18 @@ const benefits = [
 
 export function Benefits() {
   return (
-    <section id="benefits" className="py-24 relative">
+    <section id="benefits" className="py-24 relative" aria-label="Benefits">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" role="list">
           {benefits.map((benefit, index) => {
             const Icon = benefit.icon
             return (
-              <div key={index} className="group relative">
+              <div key={index} className="group relative" role="listitem">
                 <article
                   className="relative p-8 rounded-3xl bg-card backdrop-blur-xl border border-border hover:border-primary/50 transition-all duration-500 hover:scale-105 overflow-hidden"
                   aria-labelledby={`benefit-${index}`}
                 >
-                  {/* Glow effect */}
+                  {/* glow */}
                   <div
                     className={`absolute inset-0 ${benefit.color} opacity-0 group-hover:opacity-5 blur-3xl transition-opacity duration-500`}
                   />
