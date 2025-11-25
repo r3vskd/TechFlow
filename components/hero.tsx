@@ -15,19 +15,19 @@ export function Hero() {
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-5xl mx-auto text-center">
-          {/* Badge */}
+          {/* badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 backdrop-blur-xl border border-primary/20 mb-8 group hover:bg-primary/20 transition-all duration-300 cursor-pointer motion-reduce:transition-none">
             <Sparkles className="w-4 h-4 text-primary group-hover:rotate-180 transition-transform duration-500 motion-reduce:transform-none motion-reduce:transition-none" />
             <span className="text-sm text-primary font-medium">New products every week</span>
           </div>
 
-          {/* Seasonal badge */}
+          {/* seasonal */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 backdrop-blur-xl border border-accent/20 mb-8 group hover:bg-accent/20 transition-all duration-300 cursor-pointer motion-reduce:transition-none">
             <Sparkles className="w-4 h-4 text-accent group-hover:scale-110 transition-transform duration-500 motion-reduce:transform-none motion-reduce:transition-none" />
             <span className="text-xs text-accent font-medium">Fall 2025 Collection</span>
           </div>
 
-          {/* Main heading */}
+          {/* heading */}
           <h1 className="text-6xl md:text-8xl lg:text-8xl font-extrabold mb-6 leading-tight">
             <span className="block text-balance">The Future of</span>
             <span className="block bg-gradient-to-r from-primary via-accent to-cta bg-clip-text text-transparent animate-gradient motion-reduce:animate-none">
@@ -36,7 +36,7 @@ export function Hero() {
             <span className="block text-balance">in your hands</span>
           </h1>
 
-          {/* Description */}
+          {/* desc */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-6 leading-relaxed text-balance">
             Discover innovative gadgets that transform your everyday. Premium quality, exceptional design,
             and cutting-edge technology for everyone.
@@ -45,7 +45,7 @@ export function Hero() {
             Free shipping from $50 · Extended warranty · Weekly offers
           </p>
 
-          {/* CTA Buttons */}
+          {/* cta */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button
               asChild
@@ -71,7 +71,7 @@ export function Hero() {
             </Button>
           </div>
 
-          {/* Stats */}
+          {/* stats */}
           <div className="grid grid-cols-3 gap-8 mt-20 max-w-3xl mx-auto">
             {[
               { value: "500+", label: "Products" },
@@ -89,7 +89,7 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
+      {/* scroll */}
       <a
         href="#products"
         aria-label="Scroll to products"
