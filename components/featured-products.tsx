@@ -63,10 +63,10 @@ export function FeaturedProducts() {
   }
 
   return (
-    <section id="products" className="py-24 relative scroll-mt-36">
+    <section id="products" className="py-24 relative scroll-mt-36" aria-labelledby="products-heading">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">
+          <h2 id="products-heading" className="text-4xl md:text-5xl font-bold mb-4 text-balance">
             Featured{" "}
             <span className="bg-gradient-to-r from-primary via-accent to-cta bg-clip-text text-transparent">
               Products
@@ -77,12 +77,12 @@ export function FeaturedProducts() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" role="list">
           {products.map((product) => (
-            <div key={product.id} className="group relative cursor-pointer">
+            <div key={product.id} className="group relative cursor-pointer" role="listitem">
               <div className="relative rounded-3xl bg-card backdrop-blur-xl border border-border hover:border-primary/50 transition-all duration-500 overflow-hidden hover:scale-[1.02] group-hover:-translate-y-1 shadow-sm hover:shadow-lg hover:shadow-primary/10 motion-reduce:hover:scale-100 motion-reduce:group-hover:translate-y-0 motion-reduce:transition-none focus-within:ring-2 focus-within:ring-primary/30 focus-within:ring-offset-2 focus-within:ring-offset-background">
-                {/* Glow effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-accent/0 to-cta/0 group-hover:from-primary/5 group-hover:via-accent/5 group-hover:to-cta/5 transition-all duration-500" />
+                {/* glow */}
+                <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-br from-primary/0 via-accent/0 to-cta/0 group-hover:from-primary/5 group-hover:via-accent/5 group-hover:to-cta/5 transition-all duration-500" />
 
                 {/* Image container */}
                 <div className="relative aspect-square overflow-hidden rounded-t-3xl bg-secondary/50">
