@@ -57,9 +57,9 @@ export function Benefits() {
                       {benefit.title}
                     </h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">{benefit.description}</p>
-                    {/* Corner accents */}
-                    <div className="pointer-events-none absolute top-3 left-3 w-16 h-16 rounded-tl-2xl border-t border-l border-primary/20" />
-                    <div className="pointer-events-none absolute bottom-3 right-3 w-16 h-16 rounded-br-2xl border-b border-r border-accent/20" />
+                    {/* accents */}
+                    <div aria-hidden="true" className="pointer-events-none absolute top-3 left-3 w-16 h-16 rounded-tl-2xl border-t border-l border-primary/20" />
+                    <div aria-hidden="true" className="pointer-events-none absolute bottom-3 right-3 w-16 h-16 rounded-br-2xl border-b border-r border-accent/20" />
                   </div>
                 </article>
               </div>
