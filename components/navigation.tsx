@@ -134,7 +134,7 @@ export function Navigation() {
               aria-label="Open cart (3 items)"
               type="button"
             >
-              <ShoppingCart className="w-5 h-5" />
+              <ShoppingCart className="w-5 h-5" aria-hidden="true" />
               <span
                 className="absolute -top-1 -right-1 w-5 h-5 bg-cta text-[10px] font-bold rounded-full flex items-center justify-center text-white"
                 aria-live="polite"
