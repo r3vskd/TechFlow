@@ -21,7 +21,7 @@ export function Newsletter() {
     }
     emailInput.removeAttribute('aria-invalid')
     statusEl.textContent = 'Thanks for subscribing! We will send updates soon.'
-    statusEl.removeAttribute('role')
+    statusEl.setAttribute('role', 'status')
     form.reset()
   }
   return (
