@@ -65,7 +65,7 @@ export function Categories() {
                   aria-label={`Explore category ${category.name}`}
                   className="relative p-6 rounded-3xl bg-card backdrop-blur-xl border border-border hover:border-primary/50 transition-all duration-500 hover:scale-105 hover:-rotate-1 overflow-hidden block focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 focus-visible:ring-offset-2 focus-visible:ring-offset-background motion-reduce:hover:scale-100 motion-reduce:hover:rotate-0 motion-reduce:transition-none"
                 >
-                  {/* Glow effect on hover */}
+                  {/* glow */}
                   <div
                     className="absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-10 group-focus-within:opacity-10 transition-opacity duration-500 rounded-3xl motion-reduce:transition-none"
                     style={{
@@ -85,7 +85,7 @@ export function Categories() {
                       <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300 motion-reduce:transition-none">
                         {category.name}
                       </h3>
-                      {/* Count pill */}
+                      {/* count */}
                       <p className="inline-flex items-center gap-1 mt-2 text-[11px] px-2 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">
                         <span className="w-1.5 h-1.5 rounded-full bg-primary" />
                         {category.count}
