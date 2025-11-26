@@ -40,22 +40,22 @@ export function AnnouncementBar() {
           className="h-12 mt-2 rounded-full bg-gradient-to-r from-cta via-accent to-primary text-white shadow-soft ring-1 ring-white/10 flex items-center justify-center gap-3 transition-all duration-300 motion-reduce:transition-none motion-reduce:transform-none"
           role="region"
           aria-live="polite"
-          aria-label="Anuncio de temporada"
+          aria-label="Season announcement"
           id="announcement-bar"
         >
           <Megaphone className="w-4 h-4 opacity-90" />
           <p className="text-sm font-medium">
-            Temporada TechFlow: -15% en accesorios + envío gratis en pedidos &gt; $50
+            TechFlow Season: -15% on accessories + free shipping on orders &gt; $50
           </p>
           <a
-            href="#productos"
-            aria-label="Ver ofertas en productos destacados"
+            href="#products"
+            aria-label="View featured product deals"
             className="text-xs font-semibold underline underline-offset-4 hover:text-white/90 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/40 rounded-full px-2"
           >
-            Ver ofertas
+            View deals
           </a>
           <button
-            aria-label="Cerrar anuncio"
+            aria-label="Close announcement"
             onClick={handleClose}
             type="button"
             className="ml-auto mr-2 grid place-items-center rounded-full bg-white/15 hover:bg-white/25 transition-colors w-7 h-7 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/40 motion-reduce:transition-none"
