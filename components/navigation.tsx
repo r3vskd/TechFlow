@@ -137,7 +137,7 @@ export function Navigation() {
                 aria-live="polite"
               >
                 3
-                <span className="sr-only">items in cart</span>
+                <span className="sr-only">cart items</span>
               </span>
             </Button>
             <Button
