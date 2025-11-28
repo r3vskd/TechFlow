@@ -54,6 +54,11 @@ export function Newsletter() {
                   id="newsletter-email"
                   name="email"
                   aria-describedby="newsletter-status"
+                  autoComplete="email"
+                  inputMode="email"
+                  autoCapitalize="none"
+                  autoCorrect="off"
+                  spellCheck={false}
                   required
                   placeholder="your@email.com"
                   className="rounded-full bg-background/50 backdrop-blur-xl border-border focus:border-primary h-14 px-6 text-base focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
