@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer className="relative border-t border-border" aria-label="Footer">
       {/* accent */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-primary via-accent to-cta" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-primary via-accent to-cta" aria-hidden="true" />
       <div className="container mx-auto px-4 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
           {/* brand */}
