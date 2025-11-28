@@ -67,6 +67,7 @@ export function Categories() {
                 >
                   {/* glow */}
                   <div
+                    aria-hidden="true"
                     className="absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-10 group-focus-within:opacity-10 transition-opacity duration-500 rounded-3xl motion-reduce:transition-none"
                     style={{
                       backgroundImage: `linear-gradient(to bottom right, var(--color-primary), var(--color-accent))`,
@@ -87,7 +88,7 @@ export function Categories() {
                       </h3>
                       {/* count */}
                       <p className="inline-flex items-center gap-1 mt-2 text-[11px] px-2 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">
-                        <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-primary" aria-hidden="true" />
                         {category.count}
                       </p>
                     </div>
