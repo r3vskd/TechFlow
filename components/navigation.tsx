@@ -8,10 +8,7 @@ export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [activeHash, setActiveHash] = useState<string>("#home")
 
-  // Use effect to attach scroll listener once and clean up
-  if (typeof window !== "undefined") {
-    // no-op: window exists, effect below will run
-  }
+  // scroll listener setup is in effect below
 
   // Avoid adding event listeners during render
   // and ensure proper cleanup to prevent leaks
