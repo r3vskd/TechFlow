@@ -112,6 +112,7 @@ export function FeaturedProducts() {
                       className={`w-5 h-5 transition-all duration-300 ${
                         favorites.includes(product.id) ? "fill-cta text-cta" : "text-foreground"
                       }`}
+                      aria-hidden="true"
                     />
                   </button>
 
