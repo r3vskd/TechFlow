@@ -145,6 +145,7 @@ export function Navigation() {
               size="icon"
               className="md:hidden rounded-full hover:bg-primary/10 hover:text-primary transition-all duration-300"
               aria-label="Open menu"
+              aria-haspopup="menu"
               aria-expanded="false"
               type="button"
             >
