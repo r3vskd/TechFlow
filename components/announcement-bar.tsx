@@ -43,7 +43,7 @@ export function AnnouncementBar() {
           aria-label="Season announcement"
           id="announcement-bar"
         >
-          <Megaphone className="w-4 h-4 opacity-90" />
+          <Megaphone className="w-4 h-4 opacity-90" aria-hidden="true" />
           <p className="text-sm font-medium">
             TechFlow Season: -15% on accessories + free shipping on orders &gt; $50
           </p>
@@ -61,7 +61,7 @@ export function AnnouncementBar() {
             className="ml-auto mr-2 grid place-items-center rounded-full bg-white/15 hover:bg-white/25 transition-colors w-7 h-7 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/40 motion-reduce:transition-none"
             aria-controls="announcement-bar"
           >
-            <X className="w-4 h-4" />
+            <X className="w-4 h-4" aria-hidden="true" />
           </button>
         </div>
       </div>
