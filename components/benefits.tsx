@@ -51,7 +51,7 @@ export function Benefits() {
                     <div
                       className={`w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 glow-effect`}
                     >
-                      <Icon className={`w-7 h-7 ${benefit.color}`} />
+                      <Icon className={`w-7 h-7 ${benefit.color}`} aria-hidden="true" />
                     </div>
                     <h3 id={`benefit-${index}`} className="font-bold text-xl mb-2 group-hover:text-primary transition-colors duration-300">
                       {benefit.title}
