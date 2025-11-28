@@ -10,7 +10,7 @@ export function Footer() {
           {/* brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <Zap className="w-8 h-8 text-primary" />
+              <Zap className="w-8 h-8 text-primary" aria-hidden="true" />
               <span className="text-2xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
                 TechFlow
               </span>
@@ -32,7 +32,7 @@ export function Footer() {
                   aria-label={`Visit ${name}`}
                   className="w-11 h-11 rounded-full bg-secondary hover:bg-primary/20 border border-border hover:border-primary/50 flex items-center justify-center transition-all duration-300 hover:scale-110 group ring-1 ring-border hover:ring-primary/40 glow-effect focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40 motion-reduce:hover:scale-100 motion-reduce:transition-none"
                 >
-                  <Icon className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
+                  <Icon className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors duration-300" aria-hidden="true" />
                   <span className="sr-only">{name}</span>
                 </a>
               ))}
