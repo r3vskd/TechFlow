@@ -38,13 +38,14 @@ export function AnnouncementBar() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div
           className="h-12 mt-2 rounded-full bg-gradient-to-r from-cta via-accent to-primary text-white shadow-soft ring-1 ring-white/10 flex items-center justify-center gap-3 transition-all duration-300 motion-reduce:transition-none motion-reduce:transform-none"
-          role="region"
+          role="status"
           aria-live="polite"
           aria-label="Season announcement"
+          aria-describedby="announcement-text"
           id="announcement-bar"
         >
           <Megaphone className="w-4 h-4 opacity-90" aria-hidden="true" />
-          <p className="text-sm font-medium">
+          <p id="announcement-text" className="text-sm font-medium">
             TechFlow Season: -15% on accessories + free shipping on orders &gt; $50
           </p>
           <a
