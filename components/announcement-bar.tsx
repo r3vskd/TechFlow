@@ -43,6 +43,7 @@ export function AnnouncementBar() {
           aria-label="Season announcement"
           aria-describedby="announcement-text"
           id="announcement-bar"
+          data-visible={visible}
         >
           <Megaphone className="w-4 h-4 opacity-90" aria-hidden="true" />
           <p id="announcement-text" className="text-sm font-medium">
