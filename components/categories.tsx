@@ -79,7 +79,7 @@ export function Categories() {
                       className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${category.color} p-0.5 group-hover:scale-110 motion-reduce:group-hover:scale-100 transition-transform duration-300 glow-effect-strong motion-reduce:transition-none`}
                     >
                       <div className="w-full h-full rounded-2xl bg-background flex items-center justify-center">
-                        <Icon className="w-7 h-7 text-primary group-hover:text-accent transition-colors duration-300 motion-reduce:transition-none" />
+                        <Icon className="w-7 h-7 text-primary group-hover:text-accent transition-colors duration-300 motion-reduce:transition-none" aria-hidden="true" />
                       </div>
                     </div>
                     <div>
