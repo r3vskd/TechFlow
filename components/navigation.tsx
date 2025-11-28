@@ -125,7 +125,7 @@ export function Navigation() {
               aria-label="Search"
               type="button"
             >
-              <Search className="w-5 h-5" />
+              <Search className="w-5 h-5" aria-hidden="true" />
             </Button>
             <Button
               variant="ghost"
@@ -151,7 +151,7 @@ export function Navigation() {
               aria-expanded="false"
               type="button"
             >
-              <Menu className="w-5 h-5" />
+              <Menu className="w-5 h-5" aria-hidden="true" />
             </Button>
           </div>
         </div>
