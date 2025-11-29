@@ -34,7 +34,7 @@ export function AnnouncementBar() {
   if (!visible) return null
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-[60]">
+    <div className="fixed top-0 left-0 right-0 z-[60]" role="banner" aria-label="Announcement">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div
           className="h-12 mt-2 rounded-full bg-gradient-to-r from-cta via-accent to-primary text-white shadow-soft ring-1 ring-white/10 flex items-center justify-center gap-3 transition-all duration-300 motion-reduce:transition-none motion-reduce:transform-none"
