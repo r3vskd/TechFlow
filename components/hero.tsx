@@ -28,7 +28,7 @@ export function Hero() {
           </div>
 
           {/* heading */}
-          <h1 className="text-6xl md:text-8xl lg:text-8xl font-extrabold mb-6 leading-tight">
+          <h1 id="home-heading" className="text-6xl md:text-8xl lg:text-8xl font-extrabold mb-6 leading-tight">
             <span className="block text-balance">The Future of</span>
             <span className="block bg-gradient-to-r from-primary via-accent to-cta bg-clip-text text-transparent animate-gradient motion-reduce:animate-none">
               Technology
