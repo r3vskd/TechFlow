@@ -128,13 +128,15 @@ export function Navigation() {
               variant="ghost"
               size="icon"
               className="rounded-full hover:bg-primary/10 hover:text-primary transition-all duration-300 hover:scale-110 relative"
-              aria-label="Open cart (3 items)"
+              aria-label="Open cart"
+              aria-describedby="cart-count"
               type="button"
             >
               <ShoppingCart className="w-5 h-5" aria-hidden="true" />
               <span
                 className="absolute -top-1 -right-1 w-5 h-5 bg-cta text-[10px] font-bold rounded-full flex items-center justify-center text-white"
                 aria-live="polite"
+                id="cart-count"
               >
                 3
                 <span className="sr-only">cart items</span>
