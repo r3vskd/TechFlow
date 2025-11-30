@@ -53,6 +53,7 @@ export function AnnouncementBar() {
           <a
             href="#products"
             aria-label="View featured product deals"
+            aria-describedby="announcement-text"
             className="text-xs font-semibold underline underline-offset-4 hover:text-white/90 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/40 rounded-full px-2"
           >
             View deals
