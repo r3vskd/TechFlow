@@ -79,7 +79,12 @@ export function FeaturedProducts() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" role="list">
           {products.map((product) => (
-            <div key={product.id} className="group relative cursor-pointer" role="listitem">
+            <div
+              key={product.id}
+              className="group relative cursor-pointer"
+              role="listitem"
+              aria-labelledby={`product-${product.id}-name`}
+            >
               <div className="relative rounded-3xl bg-card backdrop-blur-xl border border-border hover:border-primary/50 transition-all duration-500 overflow-hidden hover:scale-[1.02] group-hover:-translate-y-1 shadow-sm hover:shadow-lg hover:shadow-primary/10 motion-reduce:hover:scale-100 motion-reduce:group-hover:translate-y-0 motion-reduce:transition-none focus-within:ring-2 focus-within:ring-primary/30 focus-within:ring-offset-2 focus-within:ring-offset-background">
                 {/* glow */}
                 <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-br from-primary/0 via-accent/0 to-cta/0 group-hover:from-primary/5 group-hover:via-accent/5 group-hover:to-cta/5 transition-all duration-500" />
@@ -133,7 +138,7 @@ export function FeaturedProducts() {
                 {/* info */}
                 <div className="p-6 relative z-10">
                   <div className="text-xs text-primary font-semibold mb-2">{product.category}</div>
-                  <h3 className="font-bold text-lg mb-2 group-hover:text-primary transition-colors duration-300 text-balance">
+                  <h3 id={`product-${product.id}-name`} className="font-bold text-lg mb-2 group-hover:text-primary transition-colors duration-300 text-balance">
                     {product.name}
                   </h3>
 
