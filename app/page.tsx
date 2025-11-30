@@ -18,7 +18,7 @@ export default function Home() {
       </div>
       {/* offers anchor before products */}
       <div id="offers" className="scroll-mt-36" aria-hidden="true" tabIndex={-1} />
-      <div id="products" className="scroll-mt-36" role="region" aria-label="Products">
+      <div id="products" className="scroll-mt-36" role="region" aria-label="Products" tabIndex={-1}>
         <FeaturedProducts />
       </div>
       <div id="benefits" className="scroll-mt-36" role="region" aria-label="Benefits">
