@@ -2,7 +2,7 @@ import { Zap, Facebook, Twitter, Instagram, Youtube, ArrowUp } from "lucide-reac
 
 export function Footer() {
   return (
-    <footer className="relative border-t border-border" aria-label="Footer">
+    <footer className="relative border-t border-border" role="contentinfo" aria-label="Footer">
       {/* accent */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-primary via-accent to-cta" aria-hidden="true" />
       <div className="container mx-auto px-4 lg:px-8 py-16">
