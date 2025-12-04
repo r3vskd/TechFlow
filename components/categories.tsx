@@ -55,7 +55,7 @@ export function Categories() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4" role="list">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4" role="list" aria-label="Categories list">
           {categories.map((category, index) => {
             const Icon = category.icon
             return (
