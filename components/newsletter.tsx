@@ -53,7 +53,7 @@ export function Newsletter() {
                   aria-label="Email"
                   id="newsletter-email"
                   name="email"
-                  aria-describedby="newsletter-status"
+                  aria-describedby="newsletter-status newsletter-privacy"
                   autoComplete="email"
                   inputMode="email"
                   autoCapitalize="none"
@@ -76,7 +76,7 @@ export function Newsletter() {
 
               <p className="text-xs text-muted-foreground mt-4">No spam. Cancel anytime.</p>
               <div id="newsletter-status" role="status" aria-live="polite" className="mt-2 text-sm text-primary"></div>
-              <div className="mt-2 text-[10px] text-muted-foreground">We protect your data per our privacy policy.</div>
+              <div id="newsletter-privacy" className="mt-2 text-[10px] text-muted-foreground">We protect your data per our privacy policy.</div>
             </div>
           </div>
         </div>
