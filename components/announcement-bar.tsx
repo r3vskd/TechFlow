@@ -40,6 +40,7 @@ export function AnnouncementBar() {
           className="h-12 mt-2 rounded-full bg-gradient-to-r from-cta via-accent to-primary text-white shadow-soft ring-1 ring-white/10 flex items-center justify-center gap-3 transition-all duration-300 motion-reduce:transition-none motion-reduce:transform-none"
           role="status"
           aria-live="polite"
+          aria-relevant="text"
           aria-atomic="true"
           aria-label="Season announcement"
           aria-describedby="announcement-text"
