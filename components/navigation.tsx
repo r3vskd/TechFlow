@@ -37,7 +37,7 @@ export function Navigation() {
     <>
       {/* skip link */}
       <a
-        href="#products"
+        href="#main"
         aria-label="Skip to content"
         className="skip-to-content"
       >
