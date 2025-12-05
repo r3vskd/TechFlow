@@ -61,6 +61,7 @@ export function AnnouncementBar() {
           </a>
           <button
             aria-label="Close announcement"
+            aria-describedby="announcement-text"
             onClick={handleClose}
             type="button"
             className="ml-auto mr-2 grid place-items-center rounded-full bg-white/15 hover:bg-white/25 transition-colors w-7 h-7 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/40 motion-reduce:transition-none"
