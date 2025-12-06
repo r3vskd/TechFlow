@@ -96,6 +96,7 @@ export function Footer() {
             <a
               href="#home"
               aria-label="Back to home"
+              title="Back to home"
               className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors duration-300 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 rounded-full px-2 motion-reduce:transition-none"
             >
               <ArrowUp className="w-4 h-4" aria-hidden="true" />
