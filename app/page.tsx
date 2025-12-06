@@ -15,7 +15,7 @@ export default function Home() {
       <div id="home" className="scroll-mt-36">
         <Hero />
       </div>
-      <div id="categories" className="scroll-mt-36" role="region" aria-labelledby="categories-heading">
+      <div id="categories" className="scroll-mt-36" role="region" aria-labelledby="categories-heading" tabIndex={-1}>
         <Categories />
       </div>
       {/* offers anchor before products */}
@@ -23,10 +23,10 @@ export default function Home() {
       <div id="products" className="scroll-mt-36" role="region" aria-labelledby="products-heading" tabIndex={-1}>
         <FeaturedProducts />
       </div>
-      <div id="benefits" className="scroll-mt-36" role="region" aria-label="Benefits">
+      <div id="benefits" className="scroll-mt-36" role="region" aria-labelledby="benefits" tabIndex={-1}>
         <Benefits />
       </div>
-      <div id="newsletter" className="scroll-mt-36" role="region" aria-label="Newsletter">
+      <div id="newsletter" className="scroll-mt-36" role="region" aria-labelledby="newsletter" tabIndex={-1}>
         <Newsletter />
       </div>
       <Footer />
