@@ -72,7 +72,7 @@ export function Navigation() {
           </a>
 
           {/* desktop menu */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-8" role="menubar">
             <a
               href="#home"
               aria-label="Go to home"
