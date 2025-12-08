@@ -30,6 +30,7 @@ export function Footer() {
                   key={name}
                   href={href}
                   aria-label={`Visit ${name}`}
+                  title={name}
                   className="w-11 h-11 rounded-full bg-secondary hover:bg-primary/20 border border-border hover:border-primary/50 flex items-center justify-center transition-all duration-300 hover:scale-110 group ring-1 ring-border hover:ring-primary/40 glow-effect focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40 motion-reduce:hover:scale-100 motion-reduce:transition-none"
                 >
                   <Icon className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors duration-300" aria-hidden="true" />
