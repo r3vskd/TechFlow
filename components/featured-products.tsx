@@ -102,6 +102,7 @@ export function FeaturedProducts() {
                   {/* badge */}
                   <div
                     className={`absolute top-4 left-4 px-3 py-1.5 rounded-full ${product.badgeColor} text-white text-xs font-semibold backdrop-blur-xl`}
+                    aria-hidden="true"
                   >
                     {product.badge}
                   </div>
