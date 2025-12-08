@@ -1,4 +1,4 @@
-﻿﻿﻿﻿import type { Metadata, Viewport } from 'next'
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿import type { Metadata, Viewport } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import { Analytics } from '@vercel/analytics/next'
@@ -37,7 +37,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" dir="ltr">
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
+      <body id="app-root" className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
         <AnnouncementBar />
         {children}
         <Analytics />
