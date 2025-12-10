@@ -86,6 +86,7 @@ export function Navigation() {
             <a
               href="#products"
               aria-label="Go to featured products"
+              aria-controls="products"
               aria-current={activeHash === "#products" ? "page" : undefined}
               data-active={activeHash === "#products"}
               className="text-foreground/80 hover:text-primary transition-colors duration-300 relative group focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 rounded-full px-2 motion-reduce:transition-none data-[active=true]:text-primary data-[active=true]:font-semibold"
