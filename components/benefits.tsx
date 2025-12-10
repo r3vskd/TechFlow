@@ -42,6 +42,7 @@ export function Benefits() {
                   className="relative p-8 rounded-3xl bg-card backdrop-blur-xl border border-border hover:border-primary/50 transition-all duration-500 hover:scale-105 overflow-hidden"
                   aria-labelledby={`benefit-${index}`}
                   aria-describedby={`benefit-${index}-desc`}
+                  role="article"
                 >
                   {/* glow */}
                   <div
