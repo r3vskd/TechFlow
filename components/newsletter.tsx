@@ -76,7 +76,7 @@ export function Newsletter() {
               </form>
 
               <p className="text-xs text-muted-foreground mt-4">No spam. Cancel anytime.</p>
-              <div id="newsletter-status" role="status" aria-live="polite" className="mt-2 text-sm text-primary"></div>
+              <div id="newsletter-status" role="status" aria-live="polite" aria-atomic="true" className="mt-2 text-sm text-primary"></div>
               <div id="newsletter-privacy" className="mt-2 text-[10px] text-muted-foreground">We protect your data per our privacy policy.</div>
             </div>
           </div>
