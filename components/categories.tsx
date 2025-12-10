@@ -64,6 +64,7 @@ export function Categories() {
                   href="#products"
                   aria-label={`Explore category ${category.name}`}
                   title={category.name}
+                  aria-describedby={`category-${index}-count`}
                   className="relative p-6 rounded-3xl bg-card backdrop-blur-xl border border-border hover:border-primary/50 transition-all duration-500 hover:scale-105 hover:-rotate-1 overflow-hidden block focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 focus-visible:ring-offset-2 focus-visible:ring-offset-background motion-reduce:hover:scale-100 motion-reduce:hover:rotate-0 motion-reduce:transition-none"
                 >
                   {/* glow */}
@@ -88,7 +89,7 @@ export function Categories() {
                         {category.name}
                       </h3>
                       {/* count */}
-                      <p className="inline-flex items-center gap-1 mt-2 text-[11px] px-2 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">
+                      <p id={`category-${index}-count`} className="inline-flex items-center gap-1 mt-2 text-[11px] px-2 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">
                         <span className="w-1.5 h-1.5 rounded-full bg-primary" aria-hidden="true" />
                         {category.count}
                       </p>
