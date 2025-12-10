@@ -146,7 +146,7 @@ export function FeaturedProducts() {
                   </h3>
 
                   {/* rating */}
-                  <div className="flex items-center gap-2 mb-3">
+                  <div className="flex items-center gap-2 mb-3" aria-label={`Rating ${product.rating} out of 5`}>
                     <div className="flex items-center gap-1">
                       <Star className="w-4 h-4 fill-accent text-accent" aria-hidden="true" />
                       <span className="text-sm font-semibold">{product.rating}</span>
