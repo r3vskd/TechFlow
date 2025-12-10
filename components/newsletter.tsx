@@ -47,7 +47,7 @@ export function Newsletter() {
                 Get exclusive offers, early releases, and the latest tech updates
               </p>
 
-              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" aria-label="Subscription form">
+              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" aria-label="Subscription form" noValidate>
                 <Input
                   type="email"
                   aria-label="Email"
