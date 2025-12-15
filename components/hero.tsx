@@ -6,7 +6,6 @@ import { ArrowRight, Sparkles } from "lucide-react"
 export function Hero() {
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-24" aria-label="Hero">
-      {/* bg */}
       <div className="absolute inset-0 overflow-hidden">
         <div aria-hidden="true" className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[120px] animate-pulse motion-reduce:animate-none" />
         <div aria-hidden="true" className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-[120px] animate-pulse delay-1000 motion-reduce:animate-none" />
@@ -15,19 +14,16 @@ export function Hero() {
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-5xl mx-auto text-center">
-          {/* badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 backdrop-blur-xl border border-primary/20 mb-8 group hover:bg-primary/20 transition-all duration-300 cursor-pointer motion-reduce:transition-none">
             <Sparkles className="w-4 h-4 text-primary group-hover:rotate-180 transition-transform duration-500 motion-reduce:transform-none motion-reduce:transition-none" aria-hidden="true" />
             <span className="text-sm text-primary font-medium">New products every week</span>
           </div>
 
-          {/* seasonal */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 backdrop-blur-xl border border-accent/20 mb-8 group hover:bg-accent/20 transition-all duration-300 cursor-pointer motion-reduce:transition-none">
             <Sparkles className="w-4 h-4 text-accent group-hover:scale-110 transition-transform duration-500 motion-reduce:transform-none motion-reduce:transition-none" aria-hidden="true" />
             <span className="text-xs text-accent font-medium">Fall 2025 Collection</span>
           </div>
 
-          {/* heading */}
           <h1 id="home-heading" className="text-6xl md:text-8xl lg:text-8xl font-extrabold mb-6 leading-tight">
             <span className="block text-balance">The Future of</span>
             <span className="block bg-gradient-to-r from-primary via-accent to-cta bg-clip-text text-transparent animate-gradient motion-reduce:animate-none">
@@ -36,7 +32,6 @@ export function Hero() {
             <span className="block text-balance">in your hands</span>
           </h1>
 
-          {/* desc */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-6 leading-relaxed text-balance">
             Discover innovative gadgets that transform your everyday. Premium quality, exceptional design,
             and cutting-edge technology for everyone.
@@ -45,7 +40,6 @@ export function Hero() {
             Free shipping from $50 · Extended warranty · Weekly offers
           </p>
 
-          {/* cta */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button
               asChild
@@ -54,7 +48,7 @@ export function Hero() {
             >
               <a href="#products" aria-label="Go to products" aria-describedby="products-heading" title="Go to products">
                 <span className="relative z-10 flex items-center gap-2">
-                  Comprar ahora
+                  Shop now
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300 motion-reduce:transform-none motion-reduce:transition-none" aria-hidden="true" />
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-cta to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300 motion-reduce:opacity-100 motion-reduce:transition-none" />
@@ -71,7 +65,6 @@ export function Hero() {
             </Button>
           </div>
 
-          {/* stats */}
           <div className="grid grid-cols-3 gap-8 mt-20 max-w-3xl mx-auto">
             {[
               { value: "500+", label: "Products" },
@@ -89,7 +82,6 @@ export function Hero() {
         </div>
       </div>
 
-      {/* scroll */}
       <a
         href="#products"
         aria-label="Scroll to products"
