@@ -3,11 +3,9 @@ import { Zap, Facebook, Twitter, Instagram, Youtube, ArrowUp } from "lucide-reac
 export function Footer() {
   return (
     <footer className="relative border-t border-border" role="contentinfo" aria-label="Footer">
-      {/* accent */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-primary via-accent to-cta" aria-hidden="true" />
       <div className="container mx-auto px-4 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
-          {/* brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <Zap className="w-8 h-8 text-primary" aria-hidden="true" />
@@ -21,14 +19,16 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-3">
               {[
-                { name: "Facebook", Icon: Facebook, href: "#" },
-                { name: "Twitter", Icon: Twitter, href: "#" },
-                { name: "Instagram", Icon: Instagram, href: "#" },
-                { name: "YouTube", Icon: Youtube, href: "#" },
+                { name: "Facebook", Icon: Facebook, href: "https://www.facebook.com/" },
+                { name: "X", Icon: Twitter, href: "https://x.com/" },
+                { name: "Instagram", Icon: Instagram, href: "https://www.instagram.com/" },
+                { name: "YouTube", Icon: Youtube, href: "https://www.youtube.com/" },
               ].map(({ name, Icon, href }) => (
                 <a
                   key={name}
                   href={href}
+                  target="_blank"
+                  rel="noreferrer"
                   aria-label={`Visit ${name}`}
                   title={name}
                   className="w-11 h-11 rounded-full bg-secondary hover:bg-primary/20 border border-border hover:border-primary/50 flex items-center justify-center transition-all duration-300 hover:scale-110 group ring-1 ring-border hover:ring-primary/40 glow-effect focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40 motion-reduce:hover:scale-100 motion-reduce:transition-none"
@@ -44,10 +44,15 @@ export function Footer() {
           <div>
             <h3 className="font-bold mb-4 text-foreground">Shop</h3>
             <ul className="space-y-3">
-              {["All Products", "New Releases", "Offers", "Best Sellers"].map((item) => (
-                <li key={item}>
-                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors duration-300">
-                    {item}
+              {[
+                { label: "All Products", href: "#products" },
+                { label: "New Releases", href: "#products" },
+                { label: "Offers", href: "#offers" },
+                { label: "Best Sellers", href: "#products" },
+              ].map((item) => (
+                <li key={item.label}>
+                  <a href={item.href} className="text-muted-foreground hover:text-primary transition-colors duration-300">
+                    {item.label}
                   </a>
                 </li>
               ))}
@@ -57,10 +62,15 @@ export function Footer() {
           <div>
             <h3 className="font-bold mb-4 text-foreground">Help</h3>
             <ul className="space-y-3">
-              {["Help Center", "Shipping", "Returns", "Warranty"].map((item) => (
-                <li key={item}>
-                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors duration-300">
-                    {item}
+              {[
+                { label: "Help Center", href: "#newsletter" },
+                { label: "Shipping", href: "#benefits" },
+                { label: "Returns", href: "/terms" },
+                { label: "Warranty", href: "#benefits" },
+              ].map((item) => (
+                <li key={item.label}>
+                  <a href={item.href} className="text-muted-foreground hover:text-primary transition-colors duration-300">
+                    {item.label}
                   </a>
                 </li>
               ))}
@@ -70,10 +80,15 @@ export function Footer() {
           <div>
             <h3 className="font-bold mb-4 text-foreground">Company</h3>
             <ul className="space-y-3">
-              {["About Us", "Contact", "Blog", "Affiliates"].map((item) => (
-                <li key={item}>
-                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors duration-300">
-                    {item}
+              {[
+                { label: "About Us", href: "#home" },
+                { label: "Contact", href: "#newsletter" },
+                { label: "Blog", href: "#home" },
+                { label: "Affiliates", href: "#home" },
+              ].map((item) => (
+                <li key={item.label}>
+                  <a href={item.href} className="text-muted-foreground hover:text-primary transition-colors duration-300">
+                    {item.label}
                   </a>
                 </li>
               ))}
@@ -81,17 +96,16 @@ export function Footer() {
           </div>
         </div>
 
-        {/* bottom */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">© 2025 TechFlow. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <a href="#" title="Privacy" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
+            <a href="/privacy" title="Privacy" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
               Privacy
             </a>
-            <a href="#" title="Terms" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
+            <a href="/terms" title="Terms" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
               Terms
             </a>
-            <a href="#" title="Cookies" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
+            <a href="/cookies" title="Cookies" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
               Cookies
             </a>
             <a
