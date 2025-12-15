@@ -63,7 +63,7 @@ export function FeaturedProducts() {
   }
 
   return (
-    <section id="products" className="py-24 relative scroll-mt-36" aria-labelledby="products-heading">
+    <section className="py-24 relative scroll-mt-36" aria-labelledby="products-heading">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
           <h2 id="products-heading" className="text-4xl md:text-5xl font-bold mb-4 text-balance">

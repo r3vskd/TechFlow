@@ -43,7 +43,7 @@ const categories = [
 
 export function Categories() {
   return (
-    <section id="categories" className="py-24 relative scroll-mt-36" aria-labelledby="categories-heading" aria-busy="false">
+    <section className="py-24 relative scroll-mt-36" aria-labelledby="categories-heading" aria-busy="false">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
           <h2 id="categories-heading" className="text-4xl md:text-5xl font-bold mb-4 text-balance">
