@@ -3,39 +3,34 @@
 import { ShoppingCart, Search, Menu, Zap } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useState, useEffect } from "react"
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [activeHash, setActiveHash] = useState<string>("#home")
+  const [mobileOpen, setMobileOpen] = useState(false)
 
-  // scroll listener setup is in effect below
-
-  // Avoid adding event listeners during render
-  // and ensure proper cleanup to prevent leaks
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     const onScroll = () => setIsScrolled(window.scrollY > 50)
     window.addEventListener("scroll", onScroll, { passive: true })
     return () => window.removeEventListener("scroll", onScroll)
   }, [])
 
-  // Track current hash to set aria-current and active styles in navigation
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     const getActiveFromHash = () => {
       const hash = window.location.hash
       return hash && hash.length > 0 ? hash : "#home"
     }
-    // Initialize on mount
     setActiveHash(getActiveFromHash())
     const onHashChange = () => setActiveHash(getActiveFromHash())
     window.addEventListener("hashchange", onHashChange, { passive: true })
     return () => window.removeEventListener("hashchange", onHashChange)
   }, [])
 
+  const onNavClick = () => setMobileOpen(false)
+
   return (
     <>
-      {/* skip link */}
       <a
         href="#main"
         aria-label="Skip to content"
@@ -55,7 +50,6 @@ export function Navigation() {
     >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          {/* logo link */}
           <a
             href="#home"
             aria-label="Go to home"
@@ -71,7 +65,6 @@ export function Navigation() {
             </span>
           </a>
 
-          {/* desktop menu */}
           <div className="hidden md:flex items-center gap-8" role="menubar" aria-label="Primary navigation">
             <a
               href="#home"
@@ -116,7 +109,6 @@ export function Navigation() {
             </a>
           </div>
 
-          {/* Actions */}
           <div className="flex items-center gap-3">
             <Button
               variant="ghost"
@@ -146,18 +138,76 @@ export function Navigation() {
                 <span className="sr-only">cart items</span>
               </span>
             </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              className="md:hidden rounded-full hover:bg-primary/10 hover:text-primary transition-all duration-300"
-              aria-label="Open menu"
-              aria-haspopup="menu"
-              aria-controls="site-nav"
-              aria-expanded="false"
-              type="button"
-            >
-              <Menu className="w-5 h-5" aria-hidden="true" />
-            </Button>
+
+            <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
+              <SheetTrigger asChild>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="md:hidden rounded-full hover:bg-primary/10 hover:text-primary transition-all duration-300"
+                  aria-label="Open menu"
+                  aria-haspopup="dialog"
+                  aria-expanded={mobileOpen}
+                  type="button"
+                >
+                  <Menu className="w-5 h-5" aria-hidden="true" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="p-0">
+                <div className="p-6">
+                  <div className="flex items-center gap-2 mb-6">
+                    <Zap className="w-7 h-7 text-primary" aria-hidden="true" />
+                    <span className="text-xl font-bold">TechFlow</span>
+                  </div>
+
+                  <div className="grid gap-3" role="menu" aria-label="Mobile navigation">
+                    <a
+                      href="#home"
+                      onClick={onNavClick}
+                      aria-current={activeHash === "#home" ? "page" : undefined}
+                      data-active={activeHash === "#home"}
+                      className="rounded-xl px-4 py-3 border border-border hover:border-primary/50 hover:bg-primary/5 transition-colors data-[active=true]:border-primary/50 data-[active=true]:bg-primary/5"
+                    >
+                      Home
+                    </a>
+                    <a
+                      href="#products"
+                      onClick={onNavClick}
+                      aria-current={activeHash === "#products" ? "page" : undefined}
+                      data-active={activeHash === "#products"}
+                      className="rounded-xl px-4 py-3 border border-border hover:border-primary/50 hover:bg-primary/5 transition-colors data-[active=true]:border-primary/50 data-[active=true]:bg-primary/5"
+                    >
+                      Products
+                    </a>
+                    <a
+                      href="#categories"
+                      onClick={onNavClick}
+                      aria-current={activeHash === "#categories" ? "page" : undefined}
+                      data-active={activeHash === "#categories"}
+                      className="rounded-xl px-4 py-3 border border-border hover:border-primary/50 hover:bg-primary/5 transition-colors data-[active=true]:border-primary/50 data-[active=true]:bg-primary/5"
+                    >
+                      Categories
+                    </a>
+                    <a
+                      href="#offers"
+                      onClick={onNavClick}
+                      aria-current={activeHash === "#offers" ? "page" : undefined}
+                      data-active={activeHash === "#offers"}
+                      className="rounded-xl px-4 py-3 border border-border hover:border-primary/50 hover:bg-primary/5 transition-colors data-[active=true]:border-primary/50 data-[active=true]:bg-primary/5"
+                    >
+                      Offers
+                    </a>
+                    <a
+                      href="#newsletter"
+                      onClick={onNavClick}
+                      className="rounded-xl px-4 py-3 border border-border hover:border-primary/50 hover:bg-primary/5 transition-colors"
+                    >
+                      Newsletter
+                    </a>
+                  </div>
+                </div>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </div>
