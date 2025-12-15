@@ -3,25 +3,28 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Send } from "lucide-react"
+import { useState } from "react"
 
 export function Newsletter() {
+  const [message, setMessage] = useState<string>("")
+  const [isError, setIsError] = useState(false)
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     const form = e.currentTarget
-    const emailInput = form.querySelector('input[type="email"]') as HTMLInputElement | null
-    const statusEl = form.querySelector('#newsletter-status') as HTMLDivElement | null
-    if (!emailInput || !statusEl) return
+    const emailInput = form.elements.namedItem("email") as HTMLInputElement | null
+    if (!emailInput) return
     const email = emailInput.value.trim()
     const isValid = /.+@.+\..+/.test(email)
     if (!isValid) {
       emailInput.setAttribute('aria-invalid', 'true')
-      statusEl.textContent = 'Please enter a valid email.'
-      statusEl.setAttribute('role', 'alert')
+      setIsError(true)
+      setMessage('Please enter a valid email.')
       return
     }
     emailInput.removeAttribute('aria-invalid')
-    statusEl.textContent = 'Thanks for subscribing! We will send updates soon.'
-    statusEl.setAttribute('role', 'status')
+    setIsError(false)
+    setMessage('Thanks for subscribing! We will send updates soon.')
     form.reset()
   }
   return (
@@ -76,7 +79,15 @@ export function Newsletter() {
               </form>
 
               <p className="text-xs text-muted-foreground mt-4">No spam. Cancel anytime.</p>
-              <div id="newsletter-status" role="status" aria-live="polite" aria-atomic="true" className="mt-2 text-sm text-primary"></div>
+              <div
+                id="newsletter-status"
+                role={isError ? "alert" : "status"}
+                aria-live={isError ? "assertive" : "polite"}
+                aria-atomic="true"
+                className="mt-2 text-sm text-primary"
+              >
+                {message}
+              </div>
               <div id="newsletter-privacy" className="mt-2 text-[10px] text-muted-foreground">We protect your data per our privacy policy.</div>
             </div>
           </div>
