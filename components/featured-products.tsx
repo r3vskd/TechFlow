@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { ShoppingCart, Star, Heart } from "lucide-react"
 import { useState } from "react"
+import Image from "next/image"
 
 const products = [
   {
@@ -91,13 +92,12 @@ export function FeaturedProducts() {
 
                 {/* image */}
                 <div className="relative aspect-square overflow-hidden rounded-t-3xl bg-secondary/50">
-                  <img
+                  <Image
                     src={product.image || "/placeholder.svg"}
                     alt={product.name}
-                    loading="lazy"
-                    decoding="async"
-                    draggable={false}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 motion-reduce:transform-none motion-reduce:transition-none"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    className="object-cover group-hover:scale-110 transition-transform duration-700 motion-reduce:transform-none motion-reduce:transition-none"
                   />
 
                   {/* badge */}
