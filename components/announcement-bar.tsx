@@ -1,12 +1,19 @@
 "use client"
 
 import { Megaphone, X } from "lucide-react"
-import { useEffect, useState } from "react"
+import { useCallback, useEffect, useState } from "react"
 
 const STORAGE_KEY = "announcement-dismissed-2025-11"
 
 export function AnnouncementBar() {
   const [visible, setVisible] = useState(false)
+
+  const handleClose = useCallback(() => {
+    try {
+      localStorage.setItem(STORAGE_KEY, "true")
+    } catch {}
+    setVisible(false)
+  }, [])
 
   useEffect(() => {
     const dismissed = typeof window !== "undefined" && localStorage.getItem(STORAGE_KEY)
@@ -22,14 +29,7 @@ export function AnnouncementBar() {
     }
     document.addEventListener("keydown", onKeyDown)
     return () => document.removeEventListener("keydown", onKeyDown)
-  }, [visible])
-
-  const handleClose = () => {
-    try {
-      localStorage.setItem(STORAGE_KEY, "true")
-    } catch {}
-    setVisible(false)
-  }
+  }, [visible, handleClose])
 
   if (!visible) return null
 
@@ -38,17 +38,13 @@ export function AnnouncementBar() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div
           className="h-12 mt-2 rounded-full bg-gradient-to-r from-cta via-accent to-primary text-white shadow-soft ring-1 ring-white/10 flex items-center justify-center gap-3 transition-all duration-300 motion-reduce:transition-none motion-reduce:transform-none"
-          role="status"
-          aria-live="polite"
-          aria-relevant="text"
-          aria-atomic="true"
           aria-label="Season announcement"
           aria-describedby="announcement-text"
           id="announcement-bar"
           data-visible={visible}
         >
           <Megaphone className="w-4 h-4 opacity-90" aria-hidden="true" />
-          <p id="announcement-text" className="text-sm font-medium">
+          <p id="announcement-text" className="text-sm font-medium" role="status" aria-live="polite" aria-atomic="true">
             TechFlow Season: -15% on accessories + free shipping on orders &gt; $50
           </p>
           <a
