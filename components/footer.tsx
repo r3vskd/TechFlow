@@ -45,10 +45,10 @@ export function Footer() {
             <h3 className="font-bold mb-4 text-foreground">Shop</h3>
             <ul className="space-y-3">
               {[
-                { label: "All Products", href: "#products" },
-                { label: "New Releases", href: "#products" },
-                { label: "Offers", href: "#offers" },
-                { label: "Best Sellers", href: "#products" },
+                { label: "All Products", href: "/shop/all" },
+                { label: "New Releases", href: "/shop/new-releases" },
+                { label: "Offers", href: "/shop/offers" },
+                { label: "Best Sellers", href: "/shop/best-sellers" },
               ].map((item) => (
                 <li key={item.label}>
                   <a href={item.href} className="text-muted-foreground hover:text-primary transition-colors duration-300">
@@ -63,10 +63,10 @@ export function Footer() {
             <h3 className="font-bold mb-4 text-foreground">Help</h3>
             <ul className="space-y-3">
               {[
-                { label: "Help Center", href: "#newsletter" },
-                { label: "Shipping", href: "#benefits" },
-                { label: "Returns", href: "/terms" },
-                { label: "Warranty", href: "#benefits" },
+                { label: "Help Center", href: "/help/center" },
+                { label: "Shipping", href: "/help/shipping" },
+                { label: "Returns", href: "/help/returns" },
+                { label: "Warranty", href: "/help/warranty" },
               ].map((item) => (
                 <li key={item.label}>
                   <a href={item.href} className="text-muted-foreground hover:text-primary transition-colors duration-300">
@@ -81,10 +81,10 @@ export function Footer() {
             <h3 className="font-bold mb-4 text-foreground">Company</h3>
             <ul className="space-y-3">
               {[
-                { label: "About Us", href: "#home" },
-                { label: "Contact", href: "#newsletter" },
-                { label: "Blog", href: "#home" },
-                { label: "Affiliates", href: "#home" },
+                { label: "About Us", href: "/about" },
+                { label: "Contact", href: "/contact" },
+                { label: "Blog", href: "/blog" },
+                { label: "Affiliates", href: "/affiliates" },
               ].map((item) => (
                 <li key={item.label}>
                   <a href={item.href} className="text-muted-foreground hover:text-primary transition-colors duration-300">
