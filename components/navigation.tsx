@@ -153,7 +153,7 @@ export function Navigation() {
                   <Menu className="w-5 h-5" aria-hidden="true" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="p-0">
+              <SheetContent side="left" className="p-0">
                 <div className="p-6">
                   <div className="flex items-center gap-2 mb-6">
                     <Zap className="w-7 h-7 text-primary" aria-hidden="true" />
