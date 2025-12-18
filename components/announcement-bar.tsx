@@ -16,37 +16,23 @@ export function AnnouncementBar() {
   }, [])
 
   useEffect(() => {
-    const dismissed = typeof window !== "undefined" && localStorage.getItem(STORAGE_KEY)
-    setVisible(!dismissed)
-  }, [])
-
-  useEffect(() => {
-    if (!visible) return
-    const onKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        handleClose()
+    try {
+      if (localStorage.getItem(STORAGE_KEY)) {
+        setVisible(false)
       }
-    }
-    document.addEventListener("keydown", onKeyDown)
-    return () => document.removeEventListener("keydown", onKeyDown)
-  }, [visible, handleClose])
+    } catch {}
+  }, [handleClose])
 
-  if (!visible) return null
+  if (!visible) {
+    return null
+  }
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-[60]" role="banner" aria-label="Announcement">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div
-          className="h-12 mt-2 rounded-full bg-gradient-to-r from-cta via-accent to-primary text-white shadow-soft ring-1 ring-white/10 flex items-center justify-center gap-3 transition-all duration-300 motion-reduce:transition-none motion-reduce:transform-none"
-          aria-label="Season announcement"
-          aria-describedby="announcement-text"
-          id="announcement-bar"
-          data-visible={visible}
-        >
-          <Megaphone className="w-4 h-4 opacity-90" aria-hidden="true" />
-          <p id="announcement-text" className="text-sm font-medium" role="status" aria-live="polite" aria-atomic="true">
-            TechFlow Season: -15% on accessories + free shipping on orders &gt; $50
-          </p>
+    <div role="banner" className="relative flex h-10 items-center justify-center bg-primary px-4 text-sm font-medium text-primary-foreground gap-x-2">
+      <Megaphone className="h-4 w-4" aria-hidden="true" />
+      <p id="announcement-text" className="text-sm font-medium" role="status" aria-live="polite" aria-atomic="true">
+        TechFlow Season: -15% on accessories + free shipping on orders > $50
+      </p>
           <a
             href="#products"
             aria-label="View featured product deals"
