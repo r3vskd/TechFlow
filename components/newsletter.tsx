@@ -78,7 +78,7 @@ export function Newsletter() {
                 </Button>
               </form>
 
-              <p className="text-xs text-muted-foreground mt-4">No spam. Cancel anytime.</p>
+              <p className="text-xs text-muted-foreground mt-4" aria-live="polite">No spam. Cancel anytime.</p>
               <div
                 id="newsletter-status"
                 role={isError ? "alert" : "status"}
