@@ -5,7 +5,7 @@ import { ArrowRight, Sparkles } from "lucide-react"
 
 export function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-24" aria-label="Hero">
+    <section aria-label="Hero section" className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-24">
       <div className="absolute inset-0 overflow-hidden">
         <div aria-hidden="true" className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[120px] animate-pulse motion-reduce:animate-none" />
         <div aria-hidden="true" className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-[120px] animate-pulse delay-1000 motion-reduce:animate-none" />
