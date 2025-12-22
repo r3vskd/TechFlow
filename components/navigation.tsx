@@ -41,6 +41,7 @@ export function Navigation() {
     <nav
       id="site-nav"
       role="navigation"
+      aria-label="Main site navigation"
       aria-label="Main navigation"
       className={`fixed top-12 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
