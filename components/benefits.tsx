@@ -31,7 +31,7 @@ const benefits = [
 
 export function Benefits() {
   return (
-    <section className="py-24 relative" aria-label="Benefits">
+    <section className="py-24 relative" aria-labelledby="benefits-heading" aria-label="Our company benefits and services">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" role="list">
           {benefits.map((benefit, index) => {
@@ -50,7 +50,7 @@ export function Benefits() {
                   />
 
                   <div className="relative z-10">
-                    <div
+                    <div aria-hidden="true"
                       className={`w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 glow-effect`}
                     >
                       <Icon className={`w-7 h-7 ${benefit.color}`} aria-hidden="true" />
