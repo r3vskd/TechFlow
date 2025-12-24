@@ -17,45 +17,46 @@ export function AnnouncementBar() {
 
   useEffect(() => {
     try {
-      if (localStorage.getItem(STORAGE_KEY)) {
-        setVisible(false)
-      }
+      setVisible(!localStorage.getItem(STORAGE_KEY))
     } catch {}
-  }, [handleClose])
+  }, [])
 
   if (!visible) {
     return null
   }
 
   return (
-    <div role="banner" aria-live="polite" className="relative flex h-10 items-center justify-center bg-primary px-4 text-sm font-medium text-primary-foreground gap-x-2">
+    <div
+      id="announcement-bar"
+      role="banner"
+      aria-live="polite"
+      className="relative flex h-10 items-center justify-center gap-x-2 bg-primary px-4 text-sm font-medium text-primary-foreground"
+    >
       <Megaphone className="h-4 w-4" aria-hidden="true" />
       <p id="announcement-text" className="text-sm font-medium" role="status" aria-live="polite" aria-atomic="true">
-        TechFlow Season: -20% on accessories + free shipping on orders > $50
+        TechFlow Season: -20% on accessories + free shipping on orders &gt; $50
       </p>
-          <a
-            href="#products"
-            aria-label="View featured product deals"
-            title="View deals"
-            aria-controls="products"
-            aria-describedby="announcement-text"
-            className="text-xs font-semibold underline underline-offset-4 hover:text-white/90 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/40 rounded-full px-2"
-          >
-            View deals
-          </a>
-          <button
-            aria-label="Close announcement"
-            aria-describedby="announcement-text"
-            title="Close"
-            onClick={handleClose}
-            type="button"
-            className="ml-auto mr-2 grid place-items-center rounded-full bg-white/15 hover:bg-white/25 transition-colors w-7 h-7 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/40 motion-reduce:transition-none"
-            aria-controls="announcement-bar"
-          >
-            <X className="w-4 h-4" aria-hidden="true" />
-          </button>
-        </div>
-      </div>
+      <a
+        href="#products"
+        aria-label="View featured product deals"
+        title="View deals"
+        aria-controls="products"
+        aria-describedby="announcement-text"
+        className="rounded-full px-2 text-xs font-semibold underline underline-offset-4 hover:text-white/90 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/40"
+      >
+        View deals
+      </a>
+      <button
+        aria-label="Close announcement"
+        aria-describedby="announcement-text"
+        title="Close"
+        onClick={handleClose}
+        type="button"
+        className="ml-auto mr-2 grid h-7 w-7 place-items-center rounded-full bg-white/15 transition-colors hover:bg-white/25 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/40 motion-reduce:transition-none"
+        aria-controls="announcement-bar"
+      >
+        <X className="h-4 w-4" aria-hidden="true" />
+      </button>
     </div>
   )
 }
