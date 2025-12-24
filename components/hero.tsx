@@ -7,9 +7,9 @@ export function Hero() {
   return (
     <section aria-label="Hero section" className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-24">
       <div className="absolute inset-0 overflow-hidden">
-        <div aria-hidden="true" className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[120px] animate-pulse motion-reduce:animate-none" />
-        <div aria-hidden="true" className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-[120px] animate-pulse delay-1000 motion-reduce:animate-none" />
-        <div aria-hidden="true" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cta/10 rounded-full blur-[150px] animate-pulse delay-500 motion-reduce:animate-none" />
+        <div aria-hidden="true" role="presentation" className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[120px] animate-pulse motion-reduce:animate-none" />
+        <div aria-hidden="true" role="presentation" className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-[120px] animate-pulse delay-1000 motion-reduce:animate-none" />
+        <div aria-hidden="true" role="presentation" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cta/10 rounded-full blur-[150px] animate-pulse delay-500 motion-reduce:animate-none" />
       </div>
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
