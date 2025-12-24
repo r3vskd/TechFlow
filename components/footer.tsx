@@ -97,7 +97,7 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-muted-foreground">© 2026 TechFlow. All rights reserved.</p>
+          <p className="text-sm text-muted-foreground">© 2025 TechFlow. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <a href="/privacy" title="Privacy" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
               Privacy
