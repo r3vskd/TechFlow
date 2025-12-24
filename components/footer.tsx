@@ -43,7 +43,7 @@ export function Footer() {
           {/* links */}
           <div>
             <h3 className="font-bold mb-4 text-foreground">Shop</h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3" role="navigation" aria-label="Shop links">
               {[
                 { label: "All Products", href: "/shop/all" },
                 { label: "New Releases", href: "/shop/new-releases" },
@@ -61,7 +61,7 @@ export function Footer() {
 
           <div>
             <h3 className="font-bold mb-4 text-foreground">Help</h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3" role="navigation" aria-label="Help links">
               {[
                 { label: "Help Center", href: "/help/center" },
                 { label: "Shipping", href: "/help/shipping" },
@@ -79,7 +79,7 @@ export function Footer() {
 
           <div>
             <h3 className="font-bold mb-4 text-foreground">Company</h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3" role="navigation" aria-label="Company links">
               {[
                 { label: "About Us", href: "/about" },
                 { label: "Contact", href: "/contact" },
