@@ -10,7 +10,7 @@ const products = [
     id: 1,
     name: "SmartWatch Pro X",
     category: "Wearables",
-    price: 299.99,
+    price: 279.99,
     originalPrice: 399.99,
     rating: 4.8,
     reviews: 234,
