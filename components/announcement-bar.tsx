@@ -31,7 +31,7 @@ export function AnnouncementBar() {
     <div role="banner" aria-live="polite" className="relative flex h-10 items-center justify-center bg-primary px-4 text-sm font-medium text-primary-foreground gap-x-2">
       <Megaphone className="h-4 w-4" aria-hidden="true" />
       <p id="announcement-text" className="text-sm font-medium" role="status" aria-live="polite" aria-atomic="true">
-        TechFlow Season: -15% on accessories + free shipping on orders > $50
+        TechFlow Season: -20% on accessories + free shipping on orders > $50
       </p>
           <a
             href="#products"
