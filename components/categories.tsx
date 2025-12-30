@@ -6,7 +6,7 @@ const categories = [
   {
     icon: Smartphone,
     name: "Smartphones",
-    count: "120+ products",
+    count: "150+ products",
     color: "from-primary to-accent",
   },
   {
