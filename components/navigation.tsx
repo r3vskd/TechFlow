@@ -135,7 +135,7 @@ export function Navigation() {
                 aria-label="Cart items count"
                 id="cart-count"
               >
-                3
+                4
                 <span className="sr-only">cart items</span>
               </span>
             </Button>
