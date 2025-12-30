@@ -28,7 +28,7 @@ export function Newsletter() {
     form.reset()
   }
   return (
-    <section className="py-24 relative" aria-labelledby="newsletter-heading">
+    <section className="py-24 relative" aria-labelledby="newsletter-heading" role="region">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="relative max-w-4xl mx-auto">
             {/* glow */}
