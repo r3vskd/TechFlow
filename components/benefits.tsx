@@ -6,7 +6,7 @@ const benefits = [
   {
     icon: Truck,
     title: "Free Shipping",
-    description: "On orders over $50",
+    description: "On all orders over $75",
     color: "text-primary",
   },
   {
