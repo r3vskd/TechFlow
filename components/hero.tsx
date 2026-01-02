@@ -37,7 +37,7 @@ export function Hero() {
             and cutting-edge technology for everyone.
           </p>
           <p className="text-sm text-muted-foreground max-w-xl mx-auto mb-10">
-            Free shipping from $50 · Extended warranty · Weekly offers
+            Free shipping from $75 · Extended warranty · Weekly offers
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
