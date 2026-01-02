@@ -36,7 +36,7 @@ const categories = [
   {
     icon: Gamepad2,
     name: "Gaming",
-    count: "75+ products",
+    count: "80+ products",
     color: "from-accent to-hover-accent",
   },
 ]
