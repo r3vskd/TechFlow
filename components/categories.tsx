@@ -30,7 +30,7 @@ const categories = [
   {
     icon: Camera,
     name: "Photography",
-    count: "65+ products",
+    count: "70+ products",
     color: "from-primary to-cta",
   },
   {
