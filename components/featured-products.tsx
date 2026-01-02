@@ -113,6 +113,7 @@ export function FeaturedProducts() {
                     onClick={() => toggleFavorite(product.id)}
                     aria-pressed={favorites.includes(product.id)}
                     aria-label={favorites.includes(product.id) ? `Remove ${product.name} from favorites` : `Add ${product.name} to favorites`}
+                    title={favorites.includes(product.id) ? `Remove ${product.name} from favorites` : `Add ${product.name} to favorites`}
                     type="button"
                     className="absolute top-4 right-4 w-10 h-10 rounded-full bg-background/80 backdrop-blur-xl border border-border flex items-center justify-center hover:scale-110 transition-all duration-300 hover:bg-background motion-reduce:hover:scale-100 motion-reduce:transition-none focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                   >
