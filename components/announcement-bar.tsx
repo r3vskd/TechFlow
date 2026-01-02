@@ -47,7 +47,7 @@ export function AnnouncementBar() {
         Deals
       </a>
       <button
-        aria-label="Close announcement"
+        aria-label="Dismiss announcement"
         aria-describedby="announcement-text"
         title="Close"
         onClick={handleClose}
