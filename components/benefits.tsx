@@ -46,6 +46,7 @@ export function Benefits() {
                 >
                   {/* glow */}
                   <div
+                    aria-hidden="true"
                     className={`absolute inset-0 ${benefit.color} opacity-0 group-hover:opacity-5 blur-3xl transition-opacity duration-500`}
                   />
 
