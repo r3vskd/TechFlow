@@ -24,7 +24,7 @@ const benefits = [
   {
     icon: CreditCard,
     title: "Secure Payment",
-    description: "Multiple payment methods",
+    description: "Card, PayPal, and more",
     color: "text-hover-accent",
   },
 ]
