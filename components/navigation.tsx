@@ -69,6 +69,7 @@ export function Navigation() {
             <a
               href="#home"
               aria-label="Go to home"
+              title="Home"
               aria-current={activeHash === "#home" ? "page" : undefined}
               data-active={activeHash === "#home"}
               className="text-foreground/80 hover:text-primary transition-colors duration-300 relative group focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 rounded-full px-2 motion-reduce:transition-none data-[active=true]:text-primary data-[active=true]:font-semibold"
@@ -79,6 +80,7 @@ export function Navigation() {
             <a
               href="#products"
               aria-label="Go to featured products"
+              title="Products"
               aria-controls="products"
               aria-current={activeHash === "#products" ? "page" : undefined}
               data-active={activeHash === "#products"}
@@ -90,6 +92,7 @@ export function Navigation() {
             <a
               href="#categories"
               aria-label="Go to categories"
+              title="Categories"
               aria-current={activeHash === "#categories" ? "page" : undefined}
               data-active={activeHash === "#categories"}
               className="text-foreground/80 hover:text-primary transition-colors duration-300 relative group focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 rounded-full px-2 motion-reduce:transition-none data-[active=true]:text-primary data-[active=true]:font-semibold"
@@ -100,6 +103,7 @@ export function Navigation() {
             <a
               href="#offers"
               aria-label="Go to offers"
+              title="Offers"
               aria-current={activeHash === "#offers" ? "page" : undefined}
               data-active={activeHash === "#offers"}
               className="text-foreground/80 hover:text-primary transition-colors duration-300 relative group focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 rounded-full px-2 motion-reduce:transition-none data-[active=true]:text-primary data-[active=true]:font-semibold"
