@@ -61,7 +61,7 @@ export function Hero() {
               variant="outline"
               className="rounded-full border-2 border-primary/30 hover:border-primary bg-transparent hover:bg-primary/10 backdrop-blur-xl px-8 py-6 text-lg font-semibold transition-all duration-300 hover:scale-105 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 focus-visible:ring-offset-2 focus-visible:ring-offset-background motion-reduce:hover:scale-100 motion-reduce:transition-none"
             >
-              <a href="#offers" aria-label="View offers" aria-describedby="products-heading" title="View offers">View offers</a>
+              <a href="#offers" aria-label="View offers" aria-describedby="products-heading" title="Offers">View offers</a>
             </Button>
           </div>
 
