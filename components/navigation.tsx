@@ -128,7 +128,7 @@ export function Navigation() {
               variant="ghost"
               size="icon"
               className="rounded-full hover:bg-primary/10 hover:text-primary transition-all duration-300 hover:scale-110 relative"
-              aria-label="Open cart"
+              aria-label="Cart"
               aria-describedby="cart-count"
               type="button"
             >
