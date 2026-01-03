@@ -88,7 +88,7 @@ export function Newsletter() {
               >
                 {message}
               </div>
-              <div id="newsletter-privacy" className="mt-2 text-[10px] text-muted-foreground">We protect your data per our privacy policy.</div>
+              <div id="newsletter-privacy" className="mt-2 text-[10px] text-muted-foreground">We protect your data under our privacy policy.</div>
             </div>
           </div>
         </div>
