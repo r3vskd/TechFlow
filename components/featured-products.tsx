@@ -129,7 +129,7 @@ export function FeaturedProducts() {
                   <div className="absolute inset-0 bg-background/95 backdrop-blur-xl opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-all duration-300 flex items-center justify-center motion-reduce:transition-none">
                     <Button
                       size="lg"
-                      aria-label={`Add ${product.name} to cart`}
+                      aria-label={`Quick add ${product.name} to cart`}
                       aria-controls="products"
                       className="rounded-full bg-gradient-to-r from-cta to-primary hover:from-cta-hover hover:to-primary text-white font-semibold gap-2 hover:scale-105 transition-all duration-300 ring-1 ring-cta/30 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cta/40 focus-visible:ring-offset-2 focus-visible:ring-offset-background motion-reduce:hover:scale-100 motion-reduce:transition-none"
                     >
