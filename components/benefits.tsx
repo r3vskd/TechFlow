@@ -18,7 +18,7 @@ const benefits = [
   {
     icon: Headphones,
     title: "24/7 Support",
-    description: "Always available for you",
+    description: "Always here for you",
     color: "text-cta",
   },
   {
