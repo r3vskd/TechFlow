@@ -184,7 +184,7 @@ export function FeaturedProducts() {
             variant="outline"
             className="rounded-full border-2 border-primary/30 hover:border-primary bg-transparent hover:bg-primary/10 backdrop-blur-xl px-8 py-6 text-lg font-semibold transition-all duration-300 hover:scale-105 motion-reduce:hover:scale-100 motion-reduce:transition-none"
           >
-            <a href="#products" aria-label="View all products" aria-describedby="products-heading">View All Products</a>
+            <a href="#products" aria-label="View all products" aria-describedby="products-heading" title="View all products">View All Products</a>
           </Button>
         </div>
       </div>
