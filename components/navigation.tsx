@@ -54,7 +54,7 @@ export function Navigation() {
           <a
             href="#home"
             aria-label="Go to home"
-            title="TechFlow"
+            title="TechFlow Home"
             className="flex items-center gap-2 group cursor-pointer focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 rounded-full px-2"
           >
             <span className="relative">
