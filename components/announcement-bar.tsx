@@ -38,8 +38,8 @@ export function AnnouncementBar() {
       </p>
       <a
         href="#products"
-        aria-label="View deals"
-        title="Deals"
+        aria-label="Shop deals"
+        title="Shop deals"
         aria-controls="products"
         aria-describedby="announcement-text"
         className="rounded-full px-2 text-xs font-semibold underline underline-offset-4 hover:text-white/90 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/40"
