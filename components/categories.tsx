@@ -24,7 +24,7 @@ const categories = [
   {
     icon: Home,
     name: "Smart Home",
-    count: "110+ products",
+    count: "120+ products",
     color: "from-hover-accent to-primary",
   },
   {
