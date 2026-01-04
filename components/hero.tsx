@@ -48,7 +48,7 @@ export function Hero() {
             >
               <a href="#products" aria-label="Go to products" aria-describedby="products-heading" title="Go to products">
                 <span className="relative z-10 flex items-center gap-2">
-                  Shop now
+                  Shop products
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300 motion-reduce:transform-none motion-reduce:transition-none" aria-hidden="true" />
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-cta to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300 motion-reduce:opacity-100 motion-reduce:transition-none" />
