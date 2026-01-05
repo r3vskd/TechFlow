@@ -24,7 +24,7 @@ export function Newsletter() {
     }
     emailInput.removeAttribute('aria-invalid')
     setIsError(false)
-    setMessage('Thanks for subscribing! We will send updates soon.')
+    setMessage('Thanks for subscribing. Updates are on the way.')
     form.reset()
   }
   return (
