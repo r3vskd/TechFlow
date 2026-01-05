@@ -3,7 +3,7 @@
 import { Megaphone, X } from "lucide-react"
 import { useCallback, useEffect, useState } from "react"
 
-const STORAGE_KEY = "announcement-dismissed-2026-01"
+const STORAGE_KEY = "announcement-dismissed-2026-01-05"
 
 export function AnnouncementBar() {
   const [visible, setVisible] = useState(false)
