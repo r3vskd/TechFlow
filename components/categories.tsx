@@ -18,7 +18,7 @@ const categories = [
   {
     icon: Watch,
     name: "Wearables",
-    count: "95+ products",
+    count: "100+ products",
     color: "from-cta to-hover-accent",
   },
   {
