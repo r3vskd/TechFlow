@@ -105,7 +105,7 @@ export function Footer() {
             <a href="/terms" title="Terms" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
               Terms
             </a>
-            <a href="/cookies" title="Cookies" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
+            <a href="/cookies" title="Cookie policy" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
               Cookies
             </a>
             <a
