@@ -33,7 +33,7 @@ export function Navigation() {
     <>
       <a
         href="#main"
-        aria-label="Skip to main content"
+        aria-label="Skip to content"
         title="Skip to content"
         className="skip-to-content"
       >
