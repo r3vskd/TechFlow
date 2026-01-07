@@ -120,6 +120,7 @@ export function Navigation() {
               size="icon"
               className="rounded-full hover:bg-primary/10 hover:text-primary transition-all duration-300 hover:scale-110"
               aria-label="Search products"
+              title="Search"
               type="button"
             >
               <Search className="w-5 h-5" aria-hidden="true" />
