@@ -37,7 +37,7 @@ export function Navigation() {
         title="Skip to content"
         className="skip-to-content"
       >
-        Skip to main content
+        Skip to content
       </a>
     <nav
       id="site-nav"
