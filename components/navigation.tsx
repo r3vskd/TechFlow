@@ -131,7 +131,7 @@ export function Navigation() {
               className="rounded-full hover:bg-primary/10 hover:text-primary transition-all duration-300 hover:scale-110 relative"
               aria-label="Cart"
               aria-describedby="cart-count"
-              title="Cart"
+              title="View cart"
               type="button"
             >
               <ShoppingCart className="w-5 h-5" aria-hidden="true" />
