@@ -74,7 +74,7 @@ export function FeaturedProducts() {
             </span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto text-balance">
-            The most innovative and popular gadgets right now
+            Our most innovative and popular gadgets right now
           </p>
         </div>
 
