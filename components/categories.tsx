@@ -12,7 +12,7 @@ const categories = [
   {
     icon: Headphones,
     name: "Audio",
-    count: "90+ products",
+    count: "90+ items",
     color: "from-accent to-cta",
   },
   {
