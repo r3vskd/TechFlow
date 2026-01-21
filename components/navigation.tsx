@@ -129,7 +129,7 @@ export function Navigation() {
               variant="ghost"
               size="icon"
               className="rounded-full hover:bg-primary/10 hover:text-primary transition-all duration-300 hover:scale-110 relative"
-              aria-label="Cart"
+              aria-label="View cart"
               aria-describedby="cart-count"
               title="View cart"
               type="button"
