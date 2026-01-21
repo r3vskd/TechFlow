@@ -62,8 +62,9 @@ export function Categories() {
               <div key={index} className="group relative cursor-pointer" role="listitem">
                 <a
                   href="#products"
-                  aria-label={`Explore ${category.name} category`}
-                  title={category.name}
+                  aria-label={`Explore ${category.name}`}
+                  title={`Explore ${category.name}`}
+                  aria-controls="products"
                   aria-describedby={`category-${index}-count`}
                   className="relative p-6 rounded-3xl bg-card backdrop-blur-xl border border-border hover:border-primary/50 transition-all duration-500 hover:scale-105 hover:-rotate-1 overflow-hidden block focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 focus-visible:ring-offset-2 focus-visible:ring-offset-background motion-reduce:hover:scale-100 motion-reduce:hover:rotate-0 motion-reduce:transition-none"
                 >
