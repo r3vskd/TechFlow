@@ -208,7 +208,9 @@ export function Navigation() {
                     <a
                       href="#newsletter"
                       onClick={onNavClick}
-                      className="rounded-xl px-4 py-3 border border-border hover:border-primary/50 hover:bg-primary/5 transition-colors"
+                      aria-current={activeHash === "#newsletter" ? "page" : undefined}
+                      data-active={activeHash === "#newsletter"}
+                      className="rounded-xl px-4 py-3 border border-border hover:border-primary/50 hover:bg-primary/5 transition-colors data-[active=true]:border-primary/50 data-[active=true]:bg-primary/5"
                     >
                       Newsletter
                     </a>
