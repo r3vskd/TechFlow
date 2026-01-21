@@ -35,6 +35,7 @@ export function Navigation() {
         href="#main"
         aria-label="Skip to content"
         title="Skip to content"
+        aria-controls="main"
         className="skip-to-content"
       >
         Skip to content
