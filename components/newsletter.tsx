@@ -53,7 +53,7 @@ export function Newsletter() {
               <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" aria-label="Subscription form" noValidate>
                 <Input
                   type="email"
-                  aria-label="Email"
+                  aria-label="Email address"
                   id="newsletter-email"
                   name="email"
                   aria-describedby="newsletter-status newsletter-privacy"
