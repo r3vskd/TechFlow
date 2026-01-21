@@ -18,7 +18,7 @@ export default function Home() {
       <div id="categories" className="scroll-mt-36" role="region" aria-labelledby="categories-heading" tabIndex={-1}>
         <Categories />
       </div>
-      <div id="offers" className="scroll-mt-36" aria-hidden="true" tabIndex={-1} />
+      <div id="offers" className="scroll-mt-36" role="region" aria-label="Offers" tabIndex={-1} />
       <div id="products" className="scroll-mt-36" role="region" aria-labelledby="products-heading" tabIndex={-1}>
         <FeaturedProducts />
       </div>
