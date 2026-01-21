@@ -17,14 +17,14 @@ export function Newsletter() {
     const email = emailInput.value.trim()
     const isValid = /.+@.+\..+/.test(email)
     if (!isValid) {
-      emailInput.setAttribute('aria-invalid', 'true')
+      emailInput.setAttribute("aria-invalid", "true")
       setIsError(true)
-      setMessage('Please enter a valid email.')
+      setMessage("Please enter a valid email.")
       return
     }
-    emailInput.removeAttribute('aria-invalid')
+    emailInput.removeAttribute("aria-invalid")
     setIsError(false)
-    setMessage('Thanks for subscribing. Updates are on the way.')
+    setMessage("Thanks for subscribing. Updates are on the way.")
     form.reset()
   }
   return (
