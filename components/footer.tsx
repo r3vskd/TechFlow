@@ -99,13 +99,13 @@ export function Footer() {
         <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">© 2026 TechFlow Inc. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <a href="/privacy" title="Privacy" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
+            <a href="/privacy" aria-label="Read privacy policy" title="Privacy" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
               Privacy
             </a>
-            <a href="/terms" title="Terms" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
+            <a href="/terms" aria-label="Read terms" title="Terms" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
               Terms
             </a>
-            <a href="/cookies" title="Cookie policy" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
+            <a href="/cookies" aria-label="Read cookie policy" title="Cookie policy" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
               Cookies
             </a>
             <a
