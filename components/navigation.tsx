@@ -95,6 +95,7 @@ export function Navigation() {
               href="#categories"
               aria-label="Go to categories"
               title="Categories"
+              aria-controls="categories"
               aria-current={activeHash === "#categories" ? "page" : undefined}
               data-active={activeHash === "#categories"}
               className="text-foreground/80 hover:text-primary transition-colors duration-300 relative group focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 rounded-full px-2 motion-reduce:transition-none data-[active=true]:text-primary data-[active=true]:font-semibold"
@@ -106,6 +107,7 @@ export function Navigation() {
               href="#offers"
               aria-label="Go to offers"
               title="Offers"
+              aria-controls="offers"
               aria-current={activeHash === "#offers" ? "page" : undefined}
               data-active={activeHash === "#offers"}
               className="text-foreground/80 hover:text-primary transition-colors duration-300 relative group focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 rounded-full px-2 motion-reduce:transition-none data-[active=true]:text-primary data-[active=true]:font-semibold"
@@ -191,6 +193,7 @@ export function Navigation() {
                     <a
                       href="#categories"
                       onClick={onNavClick}
+                      aria-controls="categories"
                       aria-current={activeHash === "#categories" ? "page" : undefined}
                       data-active={activeHash === "#categories"}
                       className="rounded-xl px-4 py-3 border border-border hover:border-primary/50 hover:bg-primary/5 transition-colors data-[active=true]:border-primary/50 data-[active=true]:bg-primary/5"
@@ -200,6 +203,7 @@ export function Navigation() {
                     <a
                       href="#offers"
                       onClick={onNavClick}
+                      aria-controls="offers"
                       aria-current={activeHash === "#offers" ? "page" : undefined}
                       data-active={activeHash === "#offers"}
                       className="rounded-xl px-4 py-3 border border-border hover:border-primary/50 hover:bg-primary/5 transition-colors data-[active=true]:border-primary/50 data-[active=true]:bg-primary/5"
