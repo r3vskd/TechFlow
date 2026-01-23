@@ -91,7 +91,7 @@ export function Hero() {
         className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce motion-reduce:animate-none focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 rounded-full px-2"
       >
         <div className="w-6 h-10 rounded-full border-2 border-primary/30 flex items-start justify-center p-2" aria-hidden="true">
-          <div className="w-1.5 h-3 bg-primary rounded-full animate-pulse" />
+          <div className="w-1.5 h-3 bg-primary rounded-full animate-pulse" aria-hidden="true" />
         </div>
       </a>
     </section>
