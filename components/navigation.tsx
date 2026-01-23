@@ -187,6 +187,7 @@ export function Navigation() {
                     <a
                       href="#products"
                       onClick={onNavClick}
+                      aria-controls="products"
                       aria-current={activeHash === "#products" ? "page" : undefined}
                       data-active={activeHash === "#products"}
                       className="rounded-xl px-4 py-3 border border-border hover:border-primary/50 hover:bg-primary/5 transition-colors data-[active=true]:border-primary/50 data-[active=true]:bg-primary/5"
@@ -216,6 +217,7 @@ export function Navigation() {
                     <a
                       href="#newsletter"
                       onClick={onNavClick}
+                      aria-controls="newsletter"
                       aria-current={activeHash === "#newsletter" ? "page" : undefined}
                       data-active={activeHash === "#newsletter"}
                       className="rounded-xl px-4 py-3 border border-border hover:border-primary/50 hover:bg-primary/5 transition-colors data-[active=true]:border-primary/50 data-[active=true]:bg-primary/5"
