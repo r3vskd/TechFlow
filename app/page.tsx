@@ -12,7 +12,7 @@ export default function Home() {
       <header aria-label="Top navigation">
         <Navigation />
       </header>
-      <div id="home" className="scroll-mt-36">
+      <div id="home" className="scroll-mt-36" role="region" aria-labelledby="home-heading" tabIndex={-1}>
         <Hero />
       </div>
       <div id="categories" className="scroll-mt-36" role="region" aria-labelledby="categories-heading" tabIndex={-1}>
