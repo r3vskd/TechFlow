@@ -22,7 +22,7 @@ export default function Home() {
       <div id="products" className="scroll-mt-36" role="region" aria-labelledby="products-heading" tabIndex={-1}>
         <FeaturedProducts />
       </div>
-      <div id="benefits" className="scroll-mt-36" role="region" aria-label="Benefits" tabIndex={-1}>
+      <div id="benefits" className="scroll-mt-36" role="region" aria-labelledby="benefits-heading" tabIndex={-1}>
         <Benefits />
       </div>
       <div id="newsletter" className="scroll-mt-36" role="region" aria-label="Newsletter" tabIndex={-1}>
