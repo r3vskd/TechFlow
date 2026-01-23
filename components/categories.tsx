@@ -6,13 +6,13 @@ const categories = [
   {
     icon: Smartphone,
     name: "Smartphones",
-    count: "150+ items",
+    count: "150+ products",
     color: "from-primary to-accent",
   },
   {
     icon: Headphones,
     name: "Audio",
-    count: "90+ items",
+    count: "90+ products",
     color: "from-accent to-cta",
   },
   {
