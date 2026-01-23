@@ -56,6 +56,7 @@ export function Navigation() {
             href="#home"
             aria-label="Go to home"
             title="TechFlow Home"
+            aria-controls="home"
             className="flex items-center gap-2 group cursor-pointer focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 rounded-full px-2"
           >
             <span className="relative">
@@ -72,6 +73,7 @@ export function Navigation() {
               href="#home"
               aria-label="Go to home"
               title="Home"
+              aria-controls="home"
               aria-current={activeHash === "#home" ? "page" : undefined}
               data-active={activeHash === "#home"}
               className="text-foreground/80 hover:text-primary transition-colors duration-300 relative group focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 rounded-full px-2 motion-reduce:transition-none data-[active=true]:text-primary data-[active=true]:font-semibold"
@@ -175,6 +177,7 @@ export function Navigation() {
                     <a
                       href="#home"
                       onClick={onNavClick}
+                      aria-controls="home"
                       aria-current={activeHash === "#home" ? "page" : undefined}
                       data-active={activeHash === "#home"}
                       className="rounded-xl px-4 py-3 border border-border hover:border-primary/50 hover:bg-primary/5 transition-colors data-[active=true]:border-primary/50 data-[active=true]:bg-primary/5"
