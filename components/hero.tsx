@@ -46,7 +46,7 @@ export function Hero() {
               size="lg"
               className="rounded-full bg-cta hover:bg-cta-hover text-white px-10 py-6 text-lg font-semibold group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_-5px] hover:shadow-cta ring-1 ring-cta/30 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cta/40 focus-visible:ring-offset-2 focus-visible:ring-offset-background motion-reduce:hover:scale-100 motion-reduce:transition-none motion-reduce:hover:shadow-none"
             >
-              <a href="#products" aria-label="Go to products" aria-describedby="products-heading" title="Go to products">
+              <a href="#products" aria-label="Go to products" aria-describedby="products-heading" title="Go to products" aria-controls="products">
                 <span className="relative z-10 flex items-center gap-2">
                   Shop products
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300 motion-reduce:transform-none motion-reduce:transition-none" aria-hidden="true" />
