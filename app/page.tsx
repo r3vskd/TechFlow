@@ -8,7 +8,7 @@ import { Navigation } from "@/components/navigation"
 
 export default function Home() {
   return (
-    <main id="main" className="min-h-screen pt-36" aria-labelledby="home-heading" aria-label="Home page">
+    <main id="main" className="min-h-screen pt-36" aria-labelledby="home-heading">
       <header aria-label="Top navigation">
         <Navigation />
       </header>
