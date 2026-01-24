@@ -49,7 +49,7 @@ export function AnnouncementBar() {
       <button
         aria-label="Dismiss announcement"
         aria-describedby="announcement-text"
-        title="Dismiss"
+        title="Dismiss announcement"
         onClick={handleClose}
         type="button"
         className="ml-auto mr-2 grid h-7 w-7 place-items-center rounded-full bg-white/15 transition-colors hover:bg-white/25 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/40 motion-reduce:transition-none"
