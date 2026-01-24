@@ -31,7 +31,7 @@ const benefits = [
 
 export function Benefits() {
   return (
-    <section className="py-24 relative" aria-labelledby="benefits-heading" aria-label="Our company benefits and services">
+    <section className="py-24 relative" aria-labelledby="benefits-heading">
       <div className="container mx-auto px-4 lg:px-8">
         <h2 id="benefits-heading" className="sr-only">Benefits</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" role="list">
