@@ -64,7 +64,7 @@ export function Newsletter() {
                   spellCheck={false}
                   aria-required="true"
                   required
-                  placeholder="you@example.com"
+                  placeholder="you@company.com"
                   className="rounded-full bg-background/50 backdrop-blur-xl border-border focus:border-primary h-14 px-6 text-base focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                 />
                 <Button
