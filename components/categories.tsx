@@ -51,7 +51,7 @@ export function Categories() {
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Category</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto text-balance">
-            Find exactly what you need in our wide selection
+            Find exactly what you need in our full selection
           </p>
         </div>
 
