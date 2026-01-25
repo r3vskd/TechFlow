@@ -147,7 +147,7 @@ export function Navigation() {
                 id="cart-count"
               >
                 4
-                <span className="sr-only">cart items</span>
+                <span className="sr-only">items in cart</span>
               </span>
             </Button>
 
