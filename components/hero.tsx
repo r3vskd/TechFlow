@@ -84,7 +84,7 @@ export function Hero() {
 
       <a
         href="#products"
-        aria-label="Jump to products"
+        aria-label="Jump to featured products"
         aria-describedby="products-heading"
         title="Jump to products"
         aria-controls="products"
