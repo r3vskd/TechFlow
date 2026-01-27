@@ -68,7 +68,7 @@ export function Navigation() {
             </span>
           </a>
 
-          <div className="hidden md:flex items-center gap-8" role="menubar" aria-label="Primary site links">
+          <div className="hidden md:flex items-center gap-8" role="menubar" aria-label="Primary navigation links">
             <a
               href="#home"
               aria-label="Go to home"
