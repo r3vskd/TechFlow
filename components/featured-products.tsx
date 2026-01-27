@@ -155,7 +155,7 @@ export function FeaturedProducts() {
                       <span className="text-sm font-semibold" aria-hidden="true">{product.rating}</span>
                     </div>
                     <span className="text-xs text-muted-foreground">({product.reviews} reviews)</span>
-                    <span className="sr-only">Rating {product.rating} out of 5 with {product.reviews} reviews</span>
+                    <span className="sr-only">Rated {product.rating} out of 5 from {product.reviews} reviews</span>
                   </div>
 
                   {/* price */}
