@@ -9,7 +9,7 @@ import { Navigation } from "@/components/navigation"
 export default function Home() {
   return (
     <main id="main" className="min-h-screen pt-36" aria-labelledby="home-heading">
-      <header aria-label="Site navigation">
+      <header aria-label="Main navigation">
         <Navigation />
       </header>
       <div id="home" className="scroll-mt-36" role="region" aria-labelledby="home-heading" tabIndex={-1}>
