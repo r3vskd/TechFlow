@@ -12,7 +12,7 @@ const benefits = [
   {
     icon: Shield,
     title: "Extended Warranty",
-    description: "3 years total protection",
+    description: "3 years of protection",
     color: "text-accent",
   },
   {
