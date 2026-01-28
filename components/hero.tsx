@@ -86,7 +86,7 @@ export function Hero() {
         href="#products"
         aria-label="Jump to featured products"
         aria-describedby="products-heading"
-        title="Jump to products"
+        title="Jump to featured products"
         aria-controls="products"
         className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce motion-reduce:animate-none focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 rounded-full px-2"
       >
