@@ -34,7 +34,7 @@ export function AnnouncementBar() {
     >
       <Megaphone className="h-4 w-4" aria-hidden="true" />
       <p id="announcement-text" className="text-sm font-medium" role="status" aria-atomic="true">
-        Winter 2026: 20% off accessories, plus free shipping over $75
+        Winter 2026: 20% off accessories + free shipping over $75
       </p>
       <a
         href="#products"
