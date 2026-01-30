@@ -33,7 +33,7 @@ export function Hero() {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-6 leading-relaxed text-balance">
-            Discover innovative gadgets that upgrade your everyday. Premium quality, exceptional design,
+            Discover innovative gadgets that elevate your everyday. Premium quality, exceptional design,
             and cutting-edge technology for everyone.
           </p>
           <p className="text-sm text-muted-foreground max-w-xl mx-auto mb-10">
