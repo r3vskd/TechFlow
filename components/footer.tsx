@@ -111,7 +111,7 @@ export function Footer() {
             <a
               href="#home"
               aria-label="Back to top"
-              title="Back to top"
+              title="Back to top of page"
               aria-controls="home"
               className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors duration-300 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 rounded-full px-2 motion-reduce:transition-none"
             >
