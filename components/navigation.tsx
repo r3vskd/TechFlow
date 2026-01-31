@@ -38,7 +38,7 @@ export function Navigation() {
         aria-controls="main"
         className="skip-to-content"
       >
-        Skip to content
+        Skip to main content
       </a>
     <nav
       id="site-nav"
