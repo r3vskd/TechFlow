@@ -102,7 +102,7 @@ export function Footer() {
             <a href="/privacy" aria-label="Read privacy policy" title="Privacy policy" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
               Privacy
             </a>
-            <a href="/terms" aria-label="Read terms" title="Terms of service" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
+            <a href="/terms" aria-label="Read terms of service" title="Terms of service" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
               Terms
             </a>
             <a href="/cookies" aria-label="Read cookie policy" title="Cookie policy" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
