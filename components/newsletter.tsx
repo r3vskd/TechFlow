@@ -89,7 +89,7 @@ export function Newsletter() {
                 {message}
               </div>
               <div id="newsletter-privacy" className="mt-2 text-[10px] text-muted-foreground">
-                We protect your data. Read our{" "}
+                We respect your data. Read our{" "}
                 <a
                   href="/privacy"
                   aria-label="Read privacy policy"
