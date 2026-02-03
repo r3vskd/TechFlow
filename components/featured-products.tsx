@@ -169,7 +169,7 @@ export function FeaturedProducts() {
 
                   {/* extra */}
                   <div aria-hidden="true" className="mt-4 text-xs text-muted-foreground flex items-center gap-3">
-                    <span className="px-2 py-1 rounded-full bg-secondary/50 border border-border">Ships in 24–48h</span>
+                    <span className="px-2 py-1 rounded-full bg-secondary/50 border border-border">Ships in 24–48 hours</span>
                     <span className="px-2 py-1 rounded-full bg-secondary/50 border border-border">In stock now</span>
                   </div>
                 </div>
