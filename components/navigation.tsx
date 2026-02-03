@@ -83,7 +83,7 @@ export function Navigation() {
             </a>
             <a
               href="#products"
-              aria-label="Go to products"
+              aria-label="Go to featured products"
               title="Products"
               aria-controls="products"
               aria-current={activeHash === "#products" ? "page" : undefined}
