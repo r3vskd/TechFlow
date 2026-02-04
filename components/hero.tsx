@@ -69,7 +69,7 @@ export function Hero() {
             {[
               { value: "500+", label: "Products" },
               { value: "50K+", label: "Happy Shoppers" },
-              { value: "4.9★", label: "Avg Rating" },
+              { value: "4.9★", label: "Average rating" },
             ].map((stat, index) => (
               <div key={index} className="group cursor-default">
                 <div className="text-3xl md:text-4xl font-bold bg-gradient-to-br from-primary to-accent bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300 motion-reduce:transform-none motion-reduce:transition-none">
