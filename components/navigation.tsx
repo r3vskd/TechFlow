@@ -33,12 +33,12 @@ export function Navigation() {
     <>
       <a
         href="#main"
-        aria-label="Skip to main content"
-        title="Skip to main content"
+        aria-label="Skip to main"
+        title="Skip to main"
         aria-controls="main"
         className="skip-to-content"
       >
-        Skip to main content
+        Skip to main
       </a>
     <nav
       id="site-nav"
