@@ -47,7 +47,7 @@ export function Newsletter() {
                 </span>
               </h2>
               <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto text-balance">
-                Get exclusive offers, early releases, and the latest tech updates
+                Get exclusive offers, early releases, and fresh tech updates
               </p>
 
               <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" aria-label="Email subscription form" noValidate>
