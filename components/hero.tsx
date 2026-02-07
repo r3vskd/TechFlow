@@ -29,7 +29,7 @@ export function Hero() {
             <span className="block bg-gradient-to-r from-primary via-accent to-cta bg-clip-text text-transparent animate-gradient motion-reduce:animate-none">
               Technology
             </span>
-            <span className="block text-balance">at your fingertips</span>
+            <span className="block text-balance">within reach</span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-6 leading-relaxed text-balance">
