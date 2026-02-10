@@ -21,7 +21,7 @@ export function Hero() {
 
           <div aria-hidden="true" className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 backdrop-blur-xl border border-accent/20 mb-8 group hover:bg-accent/20 transition-all duration-300 cursor-default motion-reduce:transition-none">
             <Sparkles className="w-4 h-4 text-accent group-hover:scale-110 transition-transform duration-500 motion-reduce:transform-none motion-reduce:transition-none" aria-hidden="true" />
-            <span className="text-xs text-accent font-medium">Winter 2026 Showcase</span>
+            <span className="text-xs text-accent font-medium">Winter 2026 Edit</span>
           </div>
 
           <h1 id="home-heading" className="text-6xl md:text-8xl lg:text-8xl font-extrabold mb-6 leading-tight">
