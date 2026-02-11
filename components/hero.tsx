@@ -68,7 +68,7 @@ export function Hero() {
           <div className="grid grid-cols-3 gap-8 mt-20 max-w-3xl mx-auto">
             {[
               { value: "500+", label: "Products" },
-              { value: "50K+", label: "Happy Shoppers" },
+              { value: "50K+", label: "Happy Customers" },
               { value: "4.9★", label: "Average rating" },
             ].map((stat, index) => (
               <div key={index} className="group cursor-default">
