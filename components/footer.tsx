@@ -15,7 +15,7 @@ export function Footer() {
             </div>
             <p className="text-muted-foreground leading-relaxed mb-6 max-w-sm">
               The most innovative electronic gadgets. Premium quality and cutting-edge technology at
-              your fingertips. Enjoy free shipping from $75 and 24/7 support.
+              your fingertips. Enjoy free shipping from $75 and round-the-clock support.
             </p>
             <div className="flex items-center gap-3">
               {[
