@@ -107,14 +107,14 @@ export function Navigation() {
             </a>
             <a
               href="#offers"
-              aria-label="Go to offers"
-              title="Offers"
+              aria-label="Go to deals"
+              title="Deals"
               aria-controls="offers"
               aria-current={activeHash === "#offers" ? "page" : undefined}
               data-active={activeHash === "#offers"}
               className="text-foreground/80 hover:text-primary transition-colors duration-300 relative group focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 rounded-full px-2 motion-reduce:transition-none data-[active=true]:text-primary data-[active=true]:font-semibold"
             >
-              Offers
+              Deals
               <span aria-hidden="true" className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 rounded-full motion-reduce:transition-none" />
             </a>
           </div>
@@ -212,7 +212,7 @@ export function Navigation() {
                       data-active={activeHash === "#offers"}
                       className="rounded-xl px-4 py-3 border border-border hover:border-primary/50 hover:bg-primary/5 transition-colors data-[active=true]:border-primary/50 data-[active=true]:bg-primary/5"
                     >
-                      Offers
+                      Deals
                     </a>
                     <a
                       href="#newsletter"
